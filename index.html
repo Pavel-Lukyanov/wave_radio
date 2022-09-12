@@ -17,8 +17,8 @@
 <body>
     <header class="header">
         <div class="container header__top">
-            <a class="logo" href="#" aria-label="Логотип W-Wave Radio">
-                <img src="./img/logo.svg" alt="Логотип W-Wawe радио">
+            <a class="logo__link" href="#" aria-label="Логотип W-Wave Radio">
+                <img class="logo__img" src="./img/logo.svg" alt="Логотип W-Wawe радио">
             </a>
             <nav class="header__nav">
                 <ul>
@@ -49,9 +49,10 @@
                     </li>
                 </ul>
             </nav>
-            <div>
-                <form class="search-form">
-                    <button class="search-form__btn">
+            <div class="header__btn__container">
+                <form class="search-form" id="search">
+                    <input class="search-form__input" type="text" placeholder="Поиск по сайту">
+                    <button type="submit" class="search-form__btn" aria-label="Поиск по сайту">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"

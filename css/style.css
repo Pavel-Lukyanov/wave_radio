@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller UltraLight'), local('MullerUltraLight'),
+        url('../fonts/MullerUltraLight.woff2') format('woff2'),
+        url('../fonts/MullerUltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Bold Italic'), local('MullerBoldItalic'),
+        url('../fonts/MullerBoldItalic.woff2') format('woff2'),
+        url('../fonts/MullerBoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Medium'), local('MullerMedium'),
+        url('../fonts/MullerMedium.woff2') format('woff2'),
+        url('../fonts/MullerMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller ExtraBold Italic'), local('MullerExtraBoldItalic'),
+        url('../fonts/MullerExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/MullerExtraBoldItalic.woff') format('woff');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller UltraLight Italic'), local('MullerUltraLightItalic'),
+        url('../fonts/MullerUltraLightItalic.woff2') format('woff2'),
+        url('../fonts/MullerUltraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Regular'), local('MullerRegular'),
+        url('../fonts/MullerRegular.woff2') format('woff2'),
+        url('../fonts/MullerRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Black Italic'), local('MullerBlackItalic'),
+        url('../fonts/MullerBlackItalic.woff2') format('woff2'),
+        url('../fonts/MullerBlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muller Hairline';
+    src: local('Muller Hairline Italic'), local('MullerHairlineItalic'),
+        url('../fonts/MullerHairlineItalic.woff2') format('woff2'),
+        url('../fonts/MullerHairlineItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Heavy Italic'), local('MullerHeavyItalic'),
+        url('../fonts/MullerHeavyItalic.woff2') format('woff2'),
+        url('../fonts/MullerHeavyItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Thin Italic'), local('MullerThinItalic'),
+        url('../fonts/MullerThinItalic.woff2') format('woff2'),
+        url('../fonts/MullerThinItalic.woff') format('woff');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muller Hairline';
+    src: local('Muller Hairline'), local('MullerHairline'),
+        url('../fonts/MullerHairline.woff2') format('woff2'),
+        url('../fonts/MullerHairline.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Heavy'), local('MullerHeavy'),
+        url('../fonts/MullerHeavy.woff2') format('woff2'),
+        url('../fonts/MullerHeavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Thin'), local('MullerThin'),
+        url('../fonts/MullerThin.woff2') format('woff2'),
+        url('../fonts/MullerThin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Light Italic'), local('MullerLightItalic'),
+        url('../fonts/MullerLightItalic.woff2') format('woff2'),
+        url('../fonts/MullerLightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Light'), local('MullerLight'),
+        url('../fonts/MullerLight.woff2') format('woff2'),
+        url('../fonts/MullerLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Black'), local('MullerBlack'),
+        url('../fonts/MullerBlack.woff2') format('woff2'),
+        url('../fonts/MullerBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Bold'), local('MullerBold'),
+        url('../fonts/MullerBold.woff2') format('woff2'),
+        url('../fonts/MullerBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller ExtraBold'), local('MullerExtraBold'),
+        url('../fonts/MullerExtraBold.woff2') format('woff2'),
+        url('../fonts/MullerExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller Regular';
+    src: local('Muller Regular Italic'), local('MullerRegularItalic'),
+        url('../fonts/MullerRegularItalic.woff2') format('woff2'),
+        url('../fonts/MullerRegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Muller';
+    src: local('Muller Medium Italic'), local('MullerMediumItalic'),
+        url('../fonts/MullerMediumItalic.woff2') format('woff2'),
+        url('../fonts/MullerMediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1110px;
+    margin: auto;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header__nav ul {
+    display: flex;
+    column-gap: 50px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+.header__btn__container {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.search-form {
+    position: relative;
+    display: flex;
+}
+
+.search-form__btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.search-form__btn svg path {
+    transition: 0.3s;
+}
+
+.search-form__btn:hover svg path {
+    stroke: #AA9DFA;
+}
+
+.search-form__btn:focus svg path {
+    stroke: #AA9DFA;
+}
+
+.search-form__btn:active svg path {
+    stroke: #4F28A5;
+}
+
+.search-form__input::placeholder {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+    color: #A1A6B4;
+}
+
+.search-form__input {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    align-items: center;
+    color: #A1A6B4;
+    position: absolute;
+    padding: 5px 0px 3px 0px;
+    right: 32px;
+    width: 0px;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.search-form__input-active {
+    width: 308px;
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+}
+
+.search-form__input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #6D31EE;
+}
+
+.btn-enter {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #121723;
+    padding: 12px 32px;
+    background-color: transparent;
+    border: 2px solid rgba(18, 23, 35, 1);
+    border-radius: 77px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-enter:hover {
+    color: #FFFFFF;
+    background-color: #121723;
+}
+
+.btn-enter:focus {
+    color: #121723;
+    background-color: #AA9DFA;
+    border: 2px #121723 solid;
+}
+
+.btn-enter:active {
+    color: #FFFFFF;
+    background-color: #4F28A5;
+    border: 2px #4F28A5 solid;
+}
+
+.header__nav a {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #121723;
+    transition: 0.3s;
+    outline: none;
+    padding: 4px 10px;
+}
+
+.header__nav a:hover {
+    color: #6D31EE;
+}
+
+.header__nav a:focus {
+    color: #FFFFFF;
+    background-color: #AA9DFA;
+}
+
+.header__nav a:active {
+    color: #4F28A5;
+}
+
+.header__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__bottom ul {
+    display: flex;
+    justify-content: space-between;
+}
