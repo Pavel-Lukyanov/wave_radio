@@ -189,26 +189,28 @@ a {
 .container {
     max-width: 1110px;
     margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .header__top {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.4fr;
     padding-top: 20px;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
+    gap: 65px;
 }
 
 .header__nav ul {
     display: flex;
-    column-gap: 50px;
-    row-gap: 10px;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .header__btn__container {
     display: flex;
-    gap: 24px;
+    gap: 18px;
     align-items: center;
 }
 
@@ -284,7 +286,7 @@ a {
     font-size: 16px;
     line-height: 16px;
     color: #121723;
-    padding: 12px 32px;
+    padding: 10px 30px;
     background-color: transparent;
     border: 2px solid rgba(18, 23, 35, 1);
     border-radius: 77px;
@@ -335,11 +337,236 @@ a {
 }
 
 .header__bottom {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr 0.1fr;
+    align-items: center;
+    height: 58px;
+    gap: 52px;
 }
 
 .header__bottom ul {
     display: flex;
     justify-content: space-between;
+}
+
+.header__bottom ul li a {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #121723;
+    transition: 0.3s;
+    padding: 3px 1px 1px 1px;
+    outline: none;
+}
+
+.header__bottom ul li a:hover {
+    color: #6D31EE;
+}
+
+.header__bottom ul li a:focus {
+    color: #FFFFFF;
+    background-color: #AA9DFA;
+}
+
+.header__bottom ul li a:active {
+    color: #4F28A5;
+}
+
+.header__bottom__border {
+    border: 1px solid #E6E8EC;
+}
+
+.onair {
+    display: flex;
+    column-gap: 3px;
+    align-items: center;
+    padding: 0px 41px 0px 16px;
+    border-left: 1px solid #E6E8EC;
+    height: 40px;
+}
+
+div.onair:last-child {
+    border-right: 1px solid #E6E8EC;
+}
+
+.header__onair__container {
+    display: flex;
+}
+
+.onair__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+}
+
+.onair__head {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #A1A6B4;
+    white-space: nowrap;
+}
+
+.onair__name {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #121723;
+}
+
+.onair__btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    margin-right: 15px;
+    outline: none;
+}
+
+.pause {
+    opacity: 0;
+}
+
+.onair-btn-active {
+    opacity: 1;
+}
+
+.onair__btn:hover svg path {
+    transition: 0.3s;
+}
+
+.onair__btn:hover svg path {
+    fill: #6D31EE;
+}
+
+.onair__btn:focus svg path {
+    fill: #AA9DFA;
+}
+
+.onair__btn:active svg path {
+    fill: #4F28A5;
+}
+
+.onair__btn svg {
+    position: absolute;
+    top: -9px;
+    left: -2px;
+}
+
+.age-limit {
+    background-color: #E6E8EC;
+    width: 46px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.age-limit span {
+    background-color: #FFFFFF;
+    border-radius: 100px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #A1A6B4;
+    padding: 7px 5px;
+}
+
+.onair__hr {
+    border-right: 1px solid #E6E8EC;
+}
+
+.main-banner h1 {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 60px;
+    color: #121723;
+    margin-bottom: 14px;
+}
+
+.main-banner h1 span {
+    font-family: 'Muller';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #121723;
+}
+
+.main-banner p {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #121723;
+    max-width: 635px;
+    margin-bottom: 45px;
+}
+
+.main-banner a {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 25px 54px;
+    background-color: #6D31EE;
+    border-radius: 40px;
+    display: inline-block;
+    width: fit-content;
+    transition: 0.3s background-color;
+}
+
+.main-banner a:hover {
+    background-color: #AA9DFA;
+}
+
+.main-banner a:focus {
+    background-color: #AA9DFA;
+    border: 1px solid #4F28A5;
+    padding: 24px 53px;
+}
+
+.main-banner a:active {
+    background-color: #4F28A5;
+}
+
+.main-banner {
+    padding-top: 95px;
+    padding-bottom: 94px;
+    background-color: transparent;
+    background-image: url(../img/microphone.png);
+    background-repeat: no-repeat;
+    background-size: 355px 378px;
+    background-position: 100% 43%;
+}
+
+.podcasts {
+    background-color: #F2F2F2;
+    padding: 94px 0px 94px 0px;
+}
+
+h2 {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    color: #121723;
+    margin-bottom: 30px;
 }

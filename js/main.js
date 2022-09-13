@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+    
+    //Поиск по сайту
     const search = document.getElementById('search');
     const showButton = search.querySelector('button');
     const searchInput = search.querySelector('input');
@@ -13,4 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
             searchInput.classList.remove('search-form__input-active');
         }
     })
+
+
+    //Кнопки play stop в header
+    const playBtn = document.querySelectorAll('.onair__btn');
+    playBtn.forEach(el => {
+        el.addEventListener('click', () => {
+            let stop = el.querySelector('.pause');
+            stop.classList.toggle('onair-btn-active');
+        });
+    });
 })
