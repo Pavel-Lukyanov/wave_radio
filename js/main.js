@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    
+
     //Поиск по сайту
     const search = document.getElementById('search');
     const showButton = search.querySelector('button');
@@ -17,12 +17,46 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 
-    //Кнопки play stop в header
+    //Кнопки play stop
     const playBtn = document.querySelectorAll('.onair__btn');
+    const stops = document.querySelectorAll('.pause');
+    const starts = document.querySelectorAll('.start');
+
     playBtn.forEach(el => {
         el.addEventListener('click', () => {
             let stop = el.querySelector('.pause');
-            stop.classList.toggle('onair-btn-active');
+            let start = el.querySelector('.start');
+            if (stop.classList.contains('onair-btn-active')) {
+                stop.classList.remove('onair-btn-active');
+                start.classList.remove('start-active');
+            } else {
+                stops.forEach(stoped => {
+                    stoped.classList.remove('onair-btn-active');
+                })
+                starts.forEach(started => {
+                    started.classList.remove('start-active');
+                })
+                stop.classList.add('onair-btn-active');
+                start.classList.add('start-active');
+            }
         });
     });
+
+
+
+    //Показать больше карточек из подкаста
+    const cards = document.querySelectorAll('.invisible-cards');
+    let showCardsBtn = document.getElementById('showMore');
+
+    showCardsBtn.addEventListener('click', () => {
+        cards.forEach(el => {
+            el.classList.toggle('visible-cards');
+        })
+        console.log(showCardsBtn.textContent);
+        if (showCardsBtn.textContent.trim() === 'Ещё подкасты') {
+            showCardsBtn.textContent = 'Скрыть';
+        } else {
+            showCardsBtn.textContent = 'Ещё подкасты';
+        }
+    })
 })

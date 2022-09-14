@@ -434,12 +434,24 @@ div.onair:last-child {
     opacity: 0;
 }
 
+.start {
+    opacity: 1;
+}
+
+.start-active {
+    opacity: 0;
+}
+
 .onair-btn-active {
     opacity: 1;
 }
 
-.onair__btn:hover svg path {
+.onair__btn svg path {
     transition: 0.3s;
+}
+
+.onair__btn:hover svg circle {
+    stroke: #6D31EE;
 }
 
 .onair__btn:hover svg path {
@@ -456,6 +468,17 @@ div.onair:last-child {
 
 .onair__btn svg {
     position: absolute;
+}
+
+.onair__btn svg circle {
+    transition: 0.3s;
+}
+
+.onair__btn:active svg circle {
+    stroke: #4F28A5;
+}
+
+.header__onair__container .onair__btn svg {
     top: -9px;
     left: -2px;
 }
@@ -570,3 +593,235 @@ h2 {
     color: #121723;
     margin-bottom: 30px;
 }
+
+.podcasts__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.podcasts__item {
+    background-color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.podcasts__img {
+    position: relative;
+    height: 140px;
+}
+
+.podcasts__img img {
+    width: 112px;
+    height: 140px;
+}
+
+.podcasts__img span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #F2F2F2;
+    width: 51px;
+    height: 16px;
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #121723;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.podcasts__statistics {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 30px;
+    gap: 30px;
+    align-items: center;
+}
+
+.podcasts__statistics button {
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #A1A6B4;
+    display: flex;
+    gap: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: transparent;
+    border: none;
+}
+
+.podcasts__statistics button:hover {
+    color: #6D31EE;
+}
+
+.podcasts__statistics button svg path {
+    transition: 0.3s;
+}
+
+.podcasts__statistics button:hover svg path {
+    fill: #6D31EE;
+}
+
+.podcasts__statistics button:focus svg path {
+    fill: #FFFFFF;
+    background-color: #AA9DFA;
+}
+
+.podcasts__statistics button:focus {
+    color: #FFFFFF;
+    background-color: #AA9DFA;
+}
+
+.podcasts__statistics button:active svg path {
+    fill: #4F28A5;
+}
+
+.podcasts__statistics button:active {
+    color: #4F28A5;
+}
+
+.podcasts__name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 30px 0px 30px;
+}
+
+.podcasts__name button svg rect {
+    transition: 0.3s;
+}
+
+.podcasts__name button:hover svg rect {
+    fill: #6D31EE;
+}
+
+.podcasts__name button:focus svg rect {
+    fill: #AA9DFA;
+}
+
+.podcasts__name button:focus svg circle {
+    stroke: #AA9DFA;
+}
+
+.podcasts__name button:active svg circle {
+    stroke: #4F28A5;
+}
+
+.podcasts__name button:active svg rect {
+    fill: #4F28A5;
+}
+
+.podcasts__name button:hover svg path {
+    fill: #6D31EE;
+}
+
+.podcasts__name button:focus svg path {
+    fill: #AA9DFA;
+}
+
+.podcasts__name button:active svg path {
+    fill: #4F28A5;
+}
+
+.podcasts__name button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    height: fit-content;
+    width: fit-content;
+}
+
+.podcasts__name button svg {
+    left: -20px;
+    top: -25px;
+}
+
+.podcasts__name__time {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #121723;
+    margin-bottom: 8px;
+}
+
+.podcasts__name div h3 {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #121723;
+    margin-bottom: 4px;
+}
+
+.podcasts__name__full {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #A1A6B4;
+}
+
+.podcasts__name div {
+    margin-bottom: 24px;
+}
+
+.podcasts__content hr {
+    border: 1px solid #E6E8EC;
+    margin-top: 0;
+    margin-bottom: 9px;
+}
+
+.podcasts__more-btn {
+    display: block;
+    margin: auto;
+    font-family: 'Muller';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #6D31EE;
+    padding: 25px 54px;
+    border: 2px #6D31EE solid;
+    background-color: transparent;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.podcasts__more-btn:hover {
+    background-color: #6D31EE;
+    color: #FFFFFF;
+}
+
+.podcasts__more-btn:focus {
+    background-color: #AA9DFA;
+    color: #FFFFFF;
+}
+
+.podcasts__more-btn:active {
+    background-color: #4F28A5;
+    color: #FFFFFF;
+    border: 2px solid #4F28A5;
+}
+
+.invisible-cards {
+    display: none;
+}
+
+.visible-cards {
+    display: grid;
+}
+
