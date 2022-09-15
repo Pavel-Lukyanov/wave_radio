@@ -829,7 +829,7 @@ h2 {
     padding-top: 94px;
     padding-bottom: 94px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
     column-gap: 30px;
 }
 
@@ -857,7 +857,203 @@ h2 {
     gap: 30px;
 }
 
-.transmission__cards a img {
-    
+.transmission__cards__text {
+    padding: 20px 16px;
+    border: 1px solid #E6E8EC;
 }
 
+.cards__item h3 {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #121723;
+    margin-bottom: 4px;
+}
+
+.cards__item p {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #A1A6B4;
+    margin-bottom: 20px;
+}
+
+.cards__item span {
+    font-family: 'Muller', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #121723;
+    padding: 2px;
+}
+
+.cards__item span svg {
+    padding-left: 4px;
+}
+
+.cards__item {
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    outline: none;
+    position: relative;
+}
+
+.cards__item img {
+    width: 100%;
+    height: 148px;
+}
+
+.cards__item img {
+    transition: 0.3s;
+}
+
+.cards__item:hover img {
+    opacity: 0.7;
+}
+
+.cards__item span {
+    transition: 0.3s;
+}
+
+.cards__item span svg path {
+    transition: 0.3s;
+}
+
+.cards__item:hover span svg path {
+    fill: #6D31EE;
+}
+
+.cards__item:hover span {
+    color: #6D31EE;
+}
+
+.cards__item::after {
+    transition: 0.3s;
+}
+
+.cards__item:focus::after {
+    border: 1px solid #6D31EE;
+    content: '';
+    position: absolute;
+    left: -7px;
+    right: -7px;
+    top: -7px;
+    bottom: -7px;
+}
+
+.cards__item:focus span svg path {
+    fill: #FFFFFF;
+}
+
+.cards__item:focus span {
+    color: #FFFFFF;
+    background-color: #AA9DFA;
+}
+
+.cards__item:active img {
+    opacity: 0.7;
+}
+
+.cards__item:active span {
+    color: #4F28A5;
+}
+
+.cards__item:active span svg path {
+    fill: #4F28A5;
+}
+
+.transmission__autor div {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #A1A6B4;
+    margin-bottom: 8px;
+}
+
+.archive__link {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #121723;
+    padding: 12px 56px;
+    border: 2px solid #121723;
+    border-radius: 77px;
+    display: inline-block;
+    margin-bottom: 12px;
+    transition: 0.3s;
+}
+
+.archive__link:hover {
+    background-color: #121723;
+    color: #FFFFFF;
+}
+
+.archive__link:focus {
+    background-color: #AA9DFA;
+    color: #121723;
+}
+
+.archive__link:active {
+    background-color: #4F28A5;
+    color: #FFFFFF;
+    border: 2px solid #4F28A5;
+}
+
+.archive__text {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #A1A6B4;
+}
+
+.transmission__archive {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.archive-img {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/mic.png);
+    width: 65px;
+    height: 89px;
+    margin-bottom: 24px;
+}
+
+.guests {
+    background-color: #121723;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.guests__color {
+    color: #FFFFFF;
+}
+
+.guests__description b {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.guests__description {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #A1A6B4;
+}
