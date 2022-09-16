@@ -1057,3 +1057,231 @@ h2 {
     line-height: 32px;
     color: #A1A6B4;
 }
+
+/* Попапы */
+
+.popup {
+    position: fixed;
+    z-index: 999999999999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: rgba(17, 24, 39, 0.5);
+}
+
+.popup.popup_opened {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.popup__container {
+    position: relative;
+    padding-top: 10px;
+    width: 824px;
+}
+
+.popup__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 25px;
+    color: rgba(17, 24, 39, 0.5);
+    font-weight: 300;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.popup__close:hover {
+    opacity: 0.7;
+}
+
+.popup__content {
+    padding: 60px;
+    background-color: #121723;
+}
+
+.popup__content h2 {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin-bottom: 17px;
+}
+
+.popup__registration {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.popup__registration a {
+    color: #6D31EE;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-right: 178px;
+    box-sizing: border-box;
+    gap: 30px;
+}
+
+.form input {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #A1A6B4;
+    padding: 25px 32px;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 40px;
+    outline: none;
+    transition: 0.3s;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form input:hover {
+    background-color: #292E39;
+}
+
+.form input:focus {
+    background-color: #292E39;
+    border: 1px solid #AA9DFA;
+}
+
+.form input:active {
+    color: #FFFFFF;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.form button {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 25px 54px;
+    background-color: #6D31EE;
+    border-radius: 40px;
+    width: fit-content;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transform: 0.3s;
+    border: none;
+}
+
+.form button:hover {
+    background-color: #AA9DFA;
+}
+
+.form button:focus {
+    background-color: #AA9DFA;
+    border: 2px solid #4F28A5;
+    padding: 23px 52px;
+}
+
+.form button:active {
+    background-color: #4F28A5;
+}
+
+.popup__content hr {
+    border: 1px solid rgba(230, 232, 236, 0.4);
+    margin-bottom: 30px;
+}
+
+.popup__enter p {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.popup__enter ul {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+}
+
+.popup__enter ul li a {
+    cursor: pointer;
+}
+
+.popup__enter ul li a svg path {
+    transform: 0.3s;
+}
+
+.popup__enter ul li a:hover svg path {
+    fill: #6D31EE;
+}
+
+.popup__enter ul li a:focus svg path {
+    fill: #AA9DFA;
+}
+
+.popup__enter ul li a:active svg path {
+    fill: #4F28A5;
+}
+
+.invalid {
+    border: 1px solid #D52B1E !important;
+}
+
+.invalid span {
+    opacity: 0;
+}
+
+.input__container {
+    width: 100%;
+    position: relative;
+}
+
+.input__container span {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #D52B1E;
+    position: absolute;
+    left: 32px;
+    top: 9px;
+    display: none;
+}
