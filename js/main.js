@@ -142,4 +142,14 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
+    //Аккордеон
+    const accordeon = document.getElementById('accordeon');
+    let accordeonBtns = accordeon.querySelectorAll('.accordeon__btn');
+
+    accordeonBtns.forEach(element => {
+        element.addEventListener('click', () => {
+            element.parentElement.classList.toggle('active');
+        })
+    });
+
 });

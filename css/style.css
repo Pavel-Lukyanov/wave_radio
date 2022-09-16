@@ -242,7 +242,7 @@ a {
 }
 
 .search-form__input::placeholder {
-    font-family: 'Muller';
+    font-family: 'Muller', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -252,7 +252,7 @@ a {
 }
 
 .search-form__input {
-    font-family: 'Muller';
+    font-family: 'Muller', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -403,7 +403,7 @@ div.onair:last-child {
 }
 
 .onair__head {
-    font-family: 'Muller';
+    font-family: 'Muller', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -413,7 +413,7 @@ div.onair:last-child {
 }
 
 .onair__name {
-    font-family: 'Muller';
+    font-family: 'Muller', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -509,7 +509,7 @@ div.onair:last-child {
 }
 
 .main-banner h1 {
-    font-family: 'Muller';
+    font-family: 'Muller', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 60px;
@@ -519,7 +519,7 @@ div.onair:last-child {
 }
 
 .main-banner h1 span {
-    font-family: 'Muller';
+    font-family: 'Muller', sans-serif;
     font-style: italic;
     font-weight: 400;
     font-size: 60px;
@@ -528,7 +528,7 @@ div.onair:last-child {
 }
 
 .main-banner p {
-    font-family: 'Muller';
+    font-family: 'Muller', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -541,7 +541,7 @@ div.onair:last-child {
 }
 
 .main-banner a {
-    font-family: 'Muller';
+    font-family: 'Muller', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -585,7 +585,7 @@ div.onair:last-child {
 }
 
 h2 {
-    font-family: 'Muller';
+    font-family: 'Muller', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
@@ -644,7 +644,7 @@ h2 {
 }
 
 .podcasts__statistics button {
-    font-family: 'Muller';
+    font-family: 'Muller', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -787,7 +787,7 @@ h2 {
 .podcasts__more-btn {
     display: block;
     margin: auto;
-    font-family: 'Muller';
+    font-family: 'Muller', sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -1056,6 +1056,8 @@ h2 {
     font-size: 20px;
     line-height: 32px;
     color: #A1A6B4;
+    max-width: 825px;
+    margin-bottom: 50px;
 }
 
 /* Попапы */
@@ -1284,4 +1286,150 @@ h2 {
     left: 32px;
     top: 9px;
     display: none;
+}
+
+.guests__accordeon {
+    border-top: 1px solid #A1A6B4;
+}
+
+.accordeon__btn {
+    background-color: transparent;
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    padding: 34px 0px;
+    border: none;
+    border-bottom: 1px solid #A1A6B4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+    outline: none;
+}
+
+.accordeon__btn:hover {
+    color: #AA9DFA;
+}
+
+.accordeon__btn:focus {
+    background-color: rgba(161, 166, 180, 0.5);
+}
+
+.accordeon__btn .accordeon__head__rectangle svg circle {
+    transition: 0.3s;
+}
+
+.accordeon__btn:hover .accordeon__head__rectangle svg circle {
+    stroke: #AA9DFA;
+}
+
+.accordeon__btn .accordeon__head__rectangle svg path {
+    transition: 0.3s;
+}
+
+.accordeon__btn .accordeon__head__rectangle svg circle {
+    transition: 0.3s;
+}
+
+.accordeon__btn:hover .accordeon__head__rectangle svg path {
+    stroke: #AA9DFA;
+}
+
+.accordeon__btn:active {
+    color: #AA9DFA;
+}
+
+.accordeon__btn:active .accordeon__head__rectangle svg circle {
+    fill: #AA9DFA;
+}
+
+.accordeon__btn:active .accordeon__head__rectangle svg path {
+    stroke: #FFFFFF;
+}
+
+.guests__content {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    gap: 30px;
+}
+
+.guests__detail img {
+    margin-bottom: 12px;
+}
+
+.guest__socials {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 14px;
+}
+
+.guest__name {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.guest__detail__description {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    color: #A1A6B4;
+    margin-bottom: 30px;
+}
+
+.guest__detail__ephir {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #AA9DFA;
+    padding: 12px 19.5px;
+    border: 2px solid #AA9DFA;
+    border-radius: 77px;
+    transition: 0.3s;
+}
+
+.guest__detail__ephir:hover {
+    background-color: #AA9DFA;
+    border: 2px solid #AA9DFA;
+    color: #FFFFFF;
+}
+
+.guest__detail__ephir:focus {
+    background-color: #6D31EE;
+    border: 2px solid #6D31EE;
+    color: #FFFFFF;
+}
+
+.guest__detail__ephir:active {
+    background-color: #6D31EE;
+    border: 2px solid #6D31EE;
+    color: #4F28A5;
+}
+
+.accordeon__content {
+    max-height: 0;
+    visibility: hidden;
+    border-bottom: 1px solid #A1A6B4;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.accordeon__item.active .accordeon__content {
+    max-height: 5000px;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.7s;
 }
