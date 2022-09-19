@@ -152,4 +152,12 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     });
 
+    //Select
+    const element = document.getElementById('selectCustom');
+    const choices = new Choices(element, {
+        searchEnabled: false,
+        itemSelectText: '',
+        position: String,
+        RenderSelectedChoices: String,
+    });
 });

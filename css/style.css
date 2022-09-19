@@ -233,7 +233,7 @@ a {
     stroke: #AA9DFA;
 }
 
-.search-form__btn:focus svg path {
+.search-form__btn:focus-visible svg path {
     stroke: #AA9DFA;
 }
 
@@ -299,7 +299,7 @@ a {
     background-color: #121723;
 }
 
-.btn-enter:focus {
+.btn-enter:focus-visible {
     color: #121723;
     background-color: #AA9DFA;
     border: 2px #121723 solid;
@@ -327,7 +327,7 @@ a {
     color: #6D31EE;
 }
 
-.header__nav a:focus {
+.header__nav a:focus-visible {
     color: #FFFFFF;
     background-color: #AA9DFA;
 }
@@ -365,7 +365,7 @@ a {
     color: #6D31EE;
 }
 
-.header__bottom ul li a:focus {
+.header__bottom ul li a:focus-visible {
     color: #FFFFFF;
     background-color: #AA9DFA;
 }
@@ -458,7 +458,7 @@ div.onair:last-child {
     fill: #6D31EE;
 }
 
-.onair__btn:focus svg path {
+.onair__btn:focus-visible svg path {
     fill: #AA9DFA;
 }
 
@@ -559,7 +559,7 @@ div.onair:last-child {
     background-color: #AA9DFA;
 }
 
-.main-banner a:focus {
+.main-banner a:focus-visible {
     background-color: #AA9DFA;
     border: 1px solid #4F28A5;
     padding: 24px 53px;
@@ -656,6 +656,7 @@ h2 {
     transition: 0.3s;
     background-color: transparent;
     border: none;
+    outline: none;
 }
 
 .podcasts__statistics button:hover {
@@ -670,12 +671,12 @@ h2 {
     fill: #6D31EE;
 }
 
-.podcasts__statistics button:focus svg path {
+.podcasts__statistics button:focus-visible svg path {
     fill: #FFFFFF;
     background-color: #AA9DFA;
 }
 
-.podcasts__statistics button:focus {
+.podcasts__statistics button:focus-visible {
     color: #FFFFFF;
     background-color: #AA9DFA;
 }
@@ -703,11 +704,11 @@ h2 {
     fill: #6D31EE;
 }
 
-.podcasts__name button:focus svg rect {
+.podcasts__name button:focus-visible svg rect {
     fill: #AA9DFA;
 }
 
-.podcasts__name button:focus svg circle {
+.podcasts__name button:focus-visible svg circle {
     stroke: #AA9DFA;
 }
 
@@ -723,7 +724,7 @@ h2 {
     fill: #6D31EE;
 }
 
-.podcasts__name button:focus svg path {
+.podcasts__name button:focus-visible svg path {
     fill: #AA9DFA;
 }
 
@@ -806,7 +807,7 @@ h2 {
     color: #FFFFFF;
 }
 
-.podcasts__more-btn:focus {
+.podcasts__more-btn:focus-visible {
     background-color: #AA9DFA;
     color: #FFFFFF;
 }
@@ -937,7 +938,7 @@ h2 {
     transition: 0.3s;
 }
 
-.cards__item:focus::after {
+.cards__item:focus-visible::after {
     border: 1px solid #6D31EE;
     content: '';
     position: absolute;
@@ -947,11 +948,11 @@ h2 {
     bottom: -7px;
 }
 
-.cards__item:focus span svg path {
+.cards__item:focus-visible span svg path {
     fill: #FFFFFF;
 }
 
-.cards__item:focus span {
+.cards__item:focus-visible span {
     color: #FFFFFF;
     background-color: #AA9DFA;
 }
@@ -968,7 +969,7 @@ h2 {
     fill: #4F28A5;
 }
 
-.transmission__autor div {
+.transmission__autor__text {
     font-family: 'Muller', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -998,7 +999,7 @@ h2 {
     color: #FFFFFF;
 }
 
-.archive__link:focus {
+.archive__link:focus-visible {
     background-color: #AA9DFA;
     color: #121723;
 }
@@ -1179,7 +1180,7 @@ h2 {
     background-color: #292E39;
 }
 
-.form input:focus {
+.form input:focus-visible {
     background-color: #292E39;
     border: 1px solid #AA9DFA;
 }
@@ -1211,7 +1212,7 @@ h2 {
     background-color: #AA9DFA;
 }
 
-.form button:focus {
+.form button:focus-visible {
     background-color: #AA9DFA;
     border: 2px solid #4F28A5;
     padding: 23px 52px;
@@ -1254,7 +1255,7 @@ h2 {
     fill: #6D31EE;
 }
 
-.popup__enter ul li a:focus svg path {
+.popup__enter ul li a:focus-visible svg path {
     fill: #AA9DFA;
 }
 
@@ -1316,7 +1317,7 @@ h2 {
     color: #AA9DFA;
 }
 
-.accordeon__btn:focus {
+.accordeon__btn:focus-visible {
     background-color: rgba(161, 166, 180, 0.5);
 }
 
@@ -1407,7 +1408,7 @@ h2 {
     color: #FFFFFF;
 }
 
-.guest__detail__ephir:focus {
+.guest__detail__ephir:focus-visible {
     background-color: #6D31EE;
     border: 2px solid #6D31EE;
     color: #FFFFFF;
@@ -1432,4 +1433,101 @@ h2 {
     visibility: visible;
     opacity: 1;
     transition: 0.7s;
+}
+
+.choices__inner {
+    background-color: #E6E8EC;
+    min-height: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.choices__inner:hover {
+    background-color: #F5F6F7;
+}
+
+.choices__inner:focus {
+    border: 1px solid #6D31EE;
+}
+
+.choices__inner:active {
+    background-color: #D2D5DD;
+}
+
+.choices__item--selectable {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #121723;
+    background-color: #E6E8EC;
+    transition: 0.3s;
+}
+
+.choices__inner:hover .choices__item--selectable {
+    background-color: #F5F6F7;
+    border: transparent;
+}
+
+.choices__inner:active .choices__item--selectable {
+    background-color: #D2D5DD;
+}
+
+.choices[data-type*=select-one]::after {
+    border: none;
+    background-color: transparent;
+    background-image: url(../img/select_rectangle.svg);
+    width: 14px;
+    height: 8px;
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    top: 48%;
+}
+
+.choices[data-type*=select-one].is-open::after {
+    transform: rotate(180deg);
+    margin-top: -4px;
+    border: none;
+}
+
+.choices.is-open .choices__inner {
+    border-radius: 10px;
+}
+
+.choices__list {
+    border-radius: 0px 0px 10px 10px;
+}
+
+.choices__list .choices__item--choice {
+    background-color: transparent;
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #A1A6B4;
+}
+
+.choices__list .choices__item--choice:not(:first-child) {
+    border-top: 1px solid #D2D5DD;
+}
+
+.choices__list--dropdown,
+.choices__list[aria-expanded] {
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 10px;
+    top: 30px;
+    box-sizing: border-box;
+}
+
+.is-selected {
+    display: none;
+}
+
+.choices.is-focused .choices__inner {
+    border: 1px solid #6D31EE;
 }
