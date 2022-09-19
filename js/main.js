@@ -160,4 +160,12 @@ document.addEventListener("DOMContentLoaded", function () {
         position: String,
         RenderSelectedChoices: String,
     });
+
+    //Табы в аккордеоне
+    /* let tabs = document.querySelectorAll('.accordeon__tab');
+    tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+
+        })
+    }); */
 });
