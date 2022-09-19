@@ -905,12 +905,12 @@ h2 {
     position: relative;
 }
 
-.cards__item img {
+.cards__item picture {
     width: 100%;
     height: 148px;
 }
 
-.cards__item img {
+.cards__item picture {
     transition: 0.3s;
 }
 
@@ -1530,4 +1530,12 @@ h2 {
 
 .choices.is-focused .choices__inner {
     border: 1px solid #6D31EE;
+}
+
+.is-open .choices__list--dropdown, .choices__list[aria-expanded] {
+    z-index: -1;
+}
+
+.is-highlighted {
+    background-color: #E6E8EC;
 }
