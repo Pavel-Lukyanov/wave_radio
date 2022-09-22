@@ -1537,7 +1537,7 @@
         </section>
         <div class="container">
             <section class="playlists">
-                <div class="playlists__genre">
+                <form action="#" class="playlists__genre">
                     <h2>
                         Плейлисты
                     </h2>
@@ -1545,212 +1545,372 @@
                         Жанр
                     </p>
                     <ul>
-                        <li>
-                            <label for="post-punk">
-                                <span></span>
-                                <input id="post-punk" type="checkbox">
+                        <li class="playlist__list">
+                            <input name="genre" id="post-punk" type="radio">
+                            <span class="genre__span"></span>
+                            <label class="genre__label" for="post-punk">
                                 Постпанк
                             </label>
                         </li>
-                        <li>
-                            <label for="hardcore">
-                                <span></span>
-                                <input id="hardcore" type="checkbox">
+                        <li class="playlist__list">
+                            <input name="genre" id="hardcore" type="radio">
+                            <span class="genre__span"></span>
+                            <label class="genre__label" for="hardcore">
                                 Хардкор
                             </label>
                         </li>
-                        <li>
-                            <label for="punk-rock">
-                                <span></span>
-                                <input id="punk-rock" type="checkbox">
+                        <li class="playlist__list">
+                            <input name="genre" id="punk-rock" type="radio">
+                            <span class="genre__span"></span>
+                            <label class="genre__label" for="punk-rock">
                                 Панк-рок
                             </label>
                         </li>
-                        <li>
-                            <label for="rock">
-                                <span></span>
-                                <input id="rock" type="checkbox">
+                        <li class="playlist__list">
+                            <input name="genre" id="rock" type="radio">
+                            <span class="genre__span"></span>
+                            <label class="genre__label" for="rock">
                                 Рок
                             </label>
                         </li>
-                        <li>
-                            <label for="progressive-rock">
-                                <span></span>
-                                <input id="progressive-rock" type="checkbox">
+                        <li class="playlist__list">
+                            <input name="genre" id="progressive-rock" type="radio">
+                            <span class="genre__span"></span>
+                            <label class="genre__label" for="progressive-rock">
                                 Прогрессивный рок
                             </label>
                         </li>
-                        <li>
-                            <label for="electonic-music">
-                                <span></span>
-                                <input id="electonic-music" type="checkbox">
+                        <li class="playlist__list">
+                            <input name="genre" id="electonic-music" type="radio">
+                            <span class="genre__span"></span>
+                            <label class="genre__label" for="electonic-music">
                                 Электронная музыка
                             </label>
                         </li>
-                        <li>
-                            <label for="classical-music">
-                                <span></span>
-                                <input id="classical-music" type="checkbox">
+                        <li class="playlist__list">
+                            <input name="genre" id="classical-music" type="radio">
+                            <span class="genre__span"></span>
+                            <label class="genre__label" for="classical-music">
                                 Классическая музыка
                             </label>
                         </li>
-                        <li>
-                            <label for="sounds-nature-city">
-                                <span></span>
-                                <input id="sounds-nature-city" type="checkbox">
+                        <li class="playlist__list">
+                            <input name="genre" id="sounds-nature-city" type="radio">
+                            <span class="genre__span"></span>
+                            <label class="genre__label" for="sounds-nature-city">
                                 Звуки природы и шум города
                             </label>
                         </li>
                     </ul>
-                </div>
-                <p class="playlists__warning">
-                    Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних © 2021 l
-                    W-Wave
+                </form>
+                <div class="playlists__warning">
+                    <p>Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних<br> ©
+                        2021 l
+                        W-Wave</p>
                     <span>18+</span>
-                </p>
+                </div>
                 <div class="playlists__autors">
-                    <a href="#" class="autors__item">
-                        <img class="autors__item__img" src="./img/ploho.png" alt="Группа Ploho">
-                        <span class="autors__russia"></span>
-                        <h3>
-                            Ploho
-                        </h3>
-                        <p>
-                            3 последних альбома
-                        </p>
-                    </a>
-                    <a href="#" class="autors__item">
-                        <img class="autors__item__img" src="./img/Molchat_Doma.png" alt="Группа Molchat Doma">
-                        <span class="autors__russia"></span>
-                        <h3>
-                            Molchat Doma
-                        </h3>
-                        <p>
-                            Все песни
-                        </p>
-                    </a>
-                    <a href="#" class="autors__item">
-                        <img class="autors__item__img" src="./img/Motorama.png" alt="Группа Motorama">
-                        <span class="autors__russia"></span>
-                        <h3>
-                            Motorama
-                        </h3>
-                        <p>
-                            Все синглы
-                        </p>
-                    </a>
-                    <a href="#" class="autors__item">
-                        <img class="autors__item__img" src="./img/Human_Tetris.png" alt="Группа Human Tetris">
-                        <span class="autors__russia"></span>
-                        <h3>
-                            Human Tetris
-                        </h3>
-                        <p>
-                            3 последних альбома
-                        </p>
-                    </a>
-                    <a href="#" class="autors__item">
-                        <img class="autors__item__img" src="./img/buerak.png" alt="Группа Буерак">
-                        <span class="autors__russia"></span>
-                        <h3>
-                            Буерак
-                        </h3>
-                        <p>
-                            Все EP
-                        </p>
-                    </a>
-                    <a href="#" class="autors__item">
-                        <img class="autors__item__img" src="./img/july_days.png" alt="Группа Июльские Дни">
-                        <span class="autors__russia"></span>
-                        <h3>
-                            Июльские Дни
-                        </h3>
-                        <p>
-                            Альбом «Колокол»
-                        </p>
-                    </a>
-                    <a href="#" class="autors__item">
-                        <img class="autors__item__img" src="./img/Joy_Division.png" alt="Группа Joy Division">
-                        <span class="autors__russia"></span>
-                        <h3>
-                            Joy Division
-                        </h3>
-                        <p>
-                            Альбом «Колокол»
-                        </p>
-                    </a>
-                    <a href="#" class="autors__item">
-                        <img class="autors__item__img" src="./img/The_Cure.png" alt="Группа The Cure">
-                        <span class="autors__russia"></span>
-                        <h3>
-                            The Cure
-                        </h3>
-                        <p>
-                            Лучшее за всё время
-                        </p>
-                    </a>
-                    <a href="#" class="autors__item">
-                        <img class="autors__item__img" src="./img/The_Smiths.png" alt="Группа The Smiths">
-                        <span class="autors__russia"></span>
-                        <h3>
-                            The Smiths
-                        </h3>
-                        <p>
-                            Период 1984–1988
-                        </p>
-                    </a>
-                    <a href="#" class="autors__item">
-                        <img class="autors__item__img" src="./img/New_Order.png" alt="Группа New Order">
-                        <span class="autors__russia"></span>
-                        <h3>
-                            New Order
-                        </h3>
-                        <p>
-                            Хиты
-                        </p>
-                    </a>
-                    <a href="#" class="autors__item">
-                        <img class="autors__item__img" src="./img/Bauhaus.png" alt="Группа Bauhaus">
-                        <span class="autors__russia"></span>
-                        <h3>
-                            Bauhaus
-                        </h3>
-                        <p>
-                            Все синглы
-                        </p>
-                    </a>
-                    <a href="#" class="autors__item">
-                        <img class="autors__item__img" src="./img/Gang_Of_Four.png" alt="Группа Gang Of Four">
-                        <span class="autors__russia"></span>
-                        <h3>
-                            Gang Of Four
-                        </h3>
-                        <p>
-                            3 последних альбома
-                        </p>
-                    </a>
+                    <div class="autors__item rus">
+                        <picture>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="21" fill="#6D31EE"></circle>
+                                <path
+                                    d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                                    fill="white">
+                                </path>
+                            </svg>
+                            <source srcset="./img/retina/ploho_2x.png 2x">
+                            <img class="autors__item__img" src="./img/ploho.png" alt="Группа Ploho">
+                        </picture>
+                        <div class="playlists__card__text">
+                            <h3>
+                                Ploho
+                            </h3>
+                            <p>
+                                3 последних альбома
+                            </p>
+                        </div>
+                    </div>
+                    <div class="autors__item rus">
+                        <picture>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="21" fill="#6D31EE"></circle>
+                                <path
+                                    d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                                    fill="white">
+                                </path>
+                            </svg>
+                            <source srcset="./img/retina/Molchat_Doma_2x.png 2x">
+                            <img class="autors__item__img" src="./img/Molchat_Doma.png" alt="Группа Molchat Doma">
+                        </picture>
+                        <div class="playlists__card__text">
+                            <h3>
+                                Molchat Doma
+                            </h3>
+                            <p>
+                                Все песни
+                            </p>
+                        </div>
+                    </div>
+                    <div class="autors__item rus">
+                        <picture>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="21" fill="#6D31EE"></circle>
+                                <path
+                                    d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                                    fill="white">
+                                </path>
+                            </svg>
+                            <source srcset="./img/retina/Motorama_2x.png 2x">
+                            <img class="autors__item__img" src="./img/Motorama.png" alt="Группа Motorama">
+                        </picture>
+                        <div class="playlists__card__text">
+                            <h3>
+                                Motorama
+                            </h3>
+                            <p>
+                                Все синглы
+                            </p>
+                        </div>
+                    </div>
+                    <div class="autors__item rus">
+                        <picture>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="21" fill="#6D31EE"></circle>
+                                <path
+                                    d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                                    fill="white">
+                                </path>
+                            </svg>
+                            <source srcset="./img/retina/Human_Tetris_2x.png 2x">
+                            <img class="autors__item__img" src="./img/Human_Tetris.png" alt="Группа Human Tetris">
+                        </picture>
+                        <div class="playlists__card__text">
+                            <h3>
+                                Human Tetris
+                            </h3>
+                            <p>
+                                3 последних альбома
+                            </p>
+                        </div>
+                    </div>
+                    <div class="autors__item rus">
+                        <picture>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="21" fill="#6D31EE"></circle>
+                                <path
+                                    d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                                    fill="white">
+                                </path>
+                            </svg>
+                            <source srcset="./img/retina/buerak_2x.png 2x">
+                            <img class="autors__item__img" src="./img/buerak.png" alt="Группа Буерак">
+                        </picture>
+                        <div class="playlists__card__text">
+                            <h3>
+                                Буерак
+                            </h3>
+                            <p>
+                                Все EP
+                            </p>
+                        </div>
+                    </div>
+                    <div class="autors__item rus">
+                        <picture>
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="21" fill="#6D31EE"></circle>
+                                <path
+                                    d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                                    fill="white">
+                                </path>
+                            </svg>
+                            <source srcset="./img/retina/july_days_2x.png 2x">
+                            <img class="autors__item__img" src="./img/july_days.png" alt="Группа Июльские Дни">
+                        </picture>
+                        <div class="playlists__card__text">
+                            <h3>
+                                Июльские Дни
+                            </h3>
+                            <p>
+                                Альбом «Колокол»
+                            </p>
+                        </div>
+                    </div>
+                    <div class="autors__item british">
+                        <picture>
+                            <svg width=" 48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="21" fill="#6D31EE"></circle>
+                                <path
+                                    d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                                    fill="white"></path>
+                            </svg>
+                            <source srcset="./img/retina/Joy_Division_2x.png 2x">
+                            <img class="autors__item__img" src="./img/Joy_Division.png" alt="Группа Joy Division">
+                        </picture>
+                        <div class="playlists__card__text">
+                            <h3>
+                                Joy Division
+                            </h3>
+                            <p>
+                                Альбом «Колокол»
+                            </p>
+                        </div>
+                    </div>
+                    <div class="autors__item british">
+                        <picture>
+                            <svg width=" 48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="21" fill="#6D31EE"></circle>
+                                <path
+                                    d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                                    fill="white"></path>
+                            </svg>
+                            <source srcset="./img/retina/The_Cure_2x.png 2x">
+                            <img class="autors__item__img" src="./img/The_Cure.png" alt="Группа The Cure">
+                        </picture>
+                        <div class="playlists__card__text">
+                            <h3>
+                                The Cure
+                            </h3>
+                            <p>
+                                Лучшее за всё время
+                            </p>
+                        </div>
+                    </div>
+                    <div class="autors__item british">
+                        <picture>
+                            <svg width=" 48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="21" fill="#6D31EE"></circle>
+                                <path
+                                    d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                                    fill="white"></path>
+                            </svg>
+                            <source srcset="./img/retina/The_Smiths_2x.png 2x">
+                            <img class="autors__item__img" src="./img/The_Smiths.png" alt="Группа The Smiths">
+                        </picture>
+                        <div class="playlists__card__text">
+                            <h3>
+                                The Smiths
+                            </h3>
+                            <p>
+                                Период 1984–1988
+                            </p>
+                        </div>
+                    </div>
+                    <div class="autors__item british">
+                        <picture>
+                            <svg width=" 48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="21" fill="#6D31EE"></circle>
+                                <path
+                                    d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                                    fill="white"></path>
+                            </svg>
+                            <source srcset="./img/retina/New_Order_2x.png 2x">
+                            <img class="autors__item__img" src="./img/New_Order.png" alt="Группа New Order">
+                        </picture>
+                        <div class="playlists__card__text">
+                            <h3>
+                                New Order
+                            </h3>
+                            <p>
+                                Хиты
+                            </p>
+                        </div>
+                    </div>
+                    <div class="autors__item british">
+                        <picture>
+                            <svg width=" 48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="21" fill="#6D31EE"></circle>
+                                <path
+                                    d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                                    fill="white"></path>
+                            </svg>
+                            <source srcset="./img/retina/Bauhaus_2x.png 2x">
+                            <img class="autors__item__img" src="./img/Bauhaus.png" alt="Группа Bauhaus">
+                        </picture>
+                        <div class="playlists__card__text">
+                            <h3>
+                                Bauhaus
+                            </h3>
+                            <p>
+                                Все синглы
+                            </p>
+                        </div>
+                    </div>
+                    <div class="autors__item british">
+                        <picture>
+                            <svg width=" 48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="24" cy="24" r="21" fill="#6D31EE"></circle>
+                                <path
+                                    d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z"
+                                    fill="white"></path>
+                            </svg>
+                            <source srcset="./img/retina/Gang_Of_Four_2x.png 2x">
+                            <img class="autors__item__img" src="./img/Gang_Of_Four.png" alt="Группа Gang Of Four">
+                        </picture>
+                        <div class="playlists__card__text">
+                            <h3>
+                                Gang Of Four
+                            </h3>
+                            <p>
+                                3 последних альбома
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
         <section class="market">
-            <div class="container">
+            <div class="container market__container">
                 <img src="./img/radio.png" alt="Изображение радио">
-                <h3>
-                    Будь с нами на одной волне!
-                </h3>
-                <p>
-                    Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то, что мы только
-                    начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать:)<br>
-                    Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0 xm. Тщательный подбор всех делатей,
-                    ручная сборка, качественный звук. Пока доступно только 60 штук в 3 цветах, но мы активно трудимся
-                    над новыми партиями и дизайном. Спешите приобрести!
-                </p>
-                <span>
-                    2 800 ₽
-                </span>
-                <a target="_blank" href="#">
-                    Купить на Яндекс.Маркет
-                </a>
+                <div class="market__text">
+                    <h3>
+                        Будь с нами на одной волне!
+                    </h3>
+                    <p>
+                        Друзья, рады представить вам продукт нашего производства! Да-да, несмотря на то, что мы только
+                        начали свой путь радиовещателей, нам хочется, чтобы вы могли как следует нас расслышать:)
+                    </p>
+                    <p>
+                        Итак, встречайте! Портативный радиоприёмник-колонка W-Wave 1.0 xm. Тщательный подбор всех
+                        делатей,
+                        ручная сборка, качественный звук. Пока доступно только 60 штук в 3 цветах, но мы активно
+                        трудимся
+                        над новыми партиями и дизайном. Спешите приобрести!
+                    </p>
+                    <div class="market__price">
+                        2 800 ₽
+                    </div>
+                    <a class="margket__link" target="_blank" href="#">
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_24651_1262)">
+                                <path
+                                    d="M10.5 20C16.0228 20 20.5 15.5228 20.5 9.99998C20.5 4.47714 16.0228 0 10.5 0C4.97724 0 0.5 4.47714 0.5 9.99998C0.5 15.5228 4.97724 20 10.5 20Z"
+                                    fill="#F0D288" />
+                                <path
+                                    d="M17.4383 4.54391L13.7294 3.17676L8.39558 10.8637L8.92665 7.3751L6.02046 5.68219L0.673828 12.1141C0.924147 13.3858 1.41008 14.5718 2.08375 15.6239L5.27361 11.7711L4.09981 16.2962L7.73695 17.6271L13.1407 9.8464L11.9568 14.2958L14.9032 16.0179L20.5579 10.3174C20.5591 10.2534 20.5598 10.1889 20.5598 10.1246C20.5598 8.78258 20.3016 7.50132 19.8328 6.32896L16.548 9.6538L17.4383 4.54391Z"
+                                    fill="#121723" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_24651_1262">
+                                    <rect x="0.5" width="20" height="20" rx="10" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        Купить на Яндекс.Маркет
+                    </a>
+                </div>
             </div>
         </section>
         <section class="about">
