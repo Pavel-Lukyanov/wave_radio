@@ -152,20 +152,33 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     });
 
+    //Табы в аккордеоне
+    let tabBtns = accordeon.querySelectorAll('.accordeon__tab');
+    let biographys = document.querySelectorAll('.guests__detail');
+    tabBtns.forEach(tab => {
+        tab.addEventListener('click', () => {
+            //Удаляем у всех кнопок класс актив
+            tabBtns.forEach(tab => {
+                tab.classList.remove('tab--active');
+            });
+            //Добавляем нажатой кнопке класс актив и меняем автора
+            tab.classList.add('tab--active');
+            biographys.forEach(biography => {
+                biography.classList.remove('detail--active');
+                let newAutor = document.getElementById(`${tab.dataset.name}`);
+                newAutor.classList.add('detail--active');
+            })
+
+        })
+    });
+
+
     //Select
     const element = document.getElementById('selectCustom');
     const choices = new Choices(element, {
         searchEnabled: false,
         itemSelectText: '',
+        allowHTML: true,
         position: String,
-        RenderSelectedChoices: String,
     });
-
-    //Табы в аккордеоне
-    /* let tabs = document.querySelectorAll('.accordeon__tab');
-    tabs.forEach(tab => {
-        tab.addEventListener('click', () => {
-
-        })
-    }); */
 });

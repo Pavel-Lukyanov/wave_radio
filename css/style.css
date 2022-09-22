@@ -1576,6 +1576,7 @@ h2 {
     background-color: transparent;
     cursor: pointer;
     padding: 0;
+    user-select: none;
 }
 
 .tab--active {
