@@ -1378,6 +1378,26 @@ h2 {
     margin-bottom: 14px;
 }
 
+.guest__socials a {
+    outline: none;
+}
+
+.guest__socials a svg g path {
+    transition: 0.3s;
+}
+
+.guest__socials a:hover svg g path {
+    fill: #6D31EE;
+}
+
+.guest__socials a:focus-visible svg g path {
+    fill: #AA9DFA;
+}
+
+.guest__socials a:active svg g path {
+    fill: #4F28A5;
+}
+
 .guest__name {
     font-family: 'Muller', sans-serif;
     font-style: normal;
@@ -1430,7 +1450,7 @@ h2 {
 }
 
 .accordeon__content {
-    max-height: 0;
+    height: 0;
     visibility: hidden;
     border-bottom: 1px solid #A1A6B4;
     opacity: 0;
@@ -1439,15 +1459,15 @@ h2 {
     grid-template-columns: repeat(4, 1fr);
     row-gap: 16px;
     justify-items: start;
-    transition: 0.3s;
     padding: 0;
+    transition: 0.3s opacity;
 }
 
 .accordeon__item.active .accordeon__content {
-    max-height: 5000px;
+    height: auto;
     visibility: visible;
     opacity: 1;
-    transition: 0.7s;
+    transition: 0.7s height;
     padding: 30px 0 30px 0;
 }
 
