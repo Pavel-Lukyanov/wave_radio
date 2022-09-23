@@ -2170,12 +2170,12 @@ h2 {
     border: 1px solid #FFFFFF;
     border-radius: 30px;
     width: 100%;
-    resize: none;
-}
-
-.form textarea::placeholder {
+    resize: none; 
     padding-top: 30px;
     padding-left: 32px;
+    padding-right: 32px;
+    outline: none;
+    box-sizing: border-box;
 }
 
 .form-container {
