@@ -9,11 +9,11 @@
     <title>W-Wave Radio</title>
     <link type="Image/x-icon" href="./img/favicon.svg" rel="icon">
     <link rel="stylesheet" href="./lib/css/choices.min.css" />
-    <!-- <link rel="stylesheet" href="./lib/css/swiper.min.css" /> -->
+    <link rel="stylesheet" href="./lib/css/swiper.min.css" />
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <script defer src="./lib/js/choices.min.js"></script>
-    <!-- <script defer src="./lib/js/swiper.min.js"></script> -->
+    <script defer src="./lib/js/swiper.min.js"></script>
     <script defer src="./js/main.js"></script>
 </head>
 
@@ -1914,26 +1914,30 @@
             </div>
         </section>
         <section class="about">
-            <div class="container">
-                <h2>
-                    О нас
-                </h2>
-                <p>
-                    <b>
-                        Приём-приём! Как слышно? Мы уже в эфире? Отлично, поехали!
-                    </b>
-                    Друзья, мы будем очень рады, если вы поможете стать нам лучше. Нам важен каждый слушатель, поэтому
-                    вы можете поделиться обратной связью о наших предеачах, темах, подборках и вообще обо всём!
-                    Это можно сделать либо написав нам в форме ниже, либо кликнув на наши соцсети в подвале сайта.
-                    Спасибо! Услышимся!:)
-                </p>
-                <div class="about__spiral"></div>
-                <div class="about__star"></div>
+            <div class="container about__background">
+                <div class="about__head">
+                    <h2>
+                        О нас
+                    </h2>
+                    <p>
+                        <b>
+                            Приём-приём! Как слышно? Мы уже в эфире? Отлично, поехали!
+                        </b>
+                        Друзья, мы будем очень рады, если вы поможете стать нам лучше. Нам важен каждый слушатель,
+                        поэтому
+                        вы можете поделиться обратной связью о наших предеачах, темах, подборках и вообще обо всём!
+                        Это можно сделать либо написав нам в форме ниже, либо кликнув на наши соцсети в подвале сайта.
+                        Спасибо! Услышимся!:)
+                    </p>
+                </div>
             </div>
             <div class="swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="./img/Dmitrii_Gutenberg.png" alt="Дмитрий Гутенберг">
+                        <picture>
+                            <source srcset="./img/retina/Dmitrii_Gutenberg_2x.png 2x">
+                            <img src="./img/Dmitrii_Gutenberg.png" alt="Дмитрий Гутенберг">
+                        </picture>
                         <h4>
                             Дмитрий Гутенберг
                         </h4>
@@ -1942,7 +1946,10 @@
                         </p>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/Anna_Vasilieva.png" alt="Анна Васильева">
+                        <picture>
+                            <source srcset="./img/retina/Anna_Vasilieva_2x.png 2x">
+                            <img src="./img/Anna_Vasilieva.png" alt="Анна Васильева">
+                        </picture>
                         <h4>
                             Анна Васильева
                         </h4>
@@ -1951,7 +1958,10 @@
                         </p>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/Petr_Dmitrievskiy.png" alt="Пётр Дмитриевский">
+                        <picture>
+                            <source srcset="./img/retina/Petr_Dmitrievskiy_2x.png 2x">
+                            <img src="./img/Petr_Dmitrievskiy.png" alt="Пётр Дмитриевский">
+                        </picture>
                         <h4>
                             Пётр Дмитриевский
                         </h4>
@@ -1960,7 +1970,10 @@
                         </p>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/Tatiana_Phleganova.png" alt="Татьяна Флеганова">
+                        <picture>
+                            <source srcset="./img/retina/Tatiana_Phleganova_2x.png 2x">
+                            <img src="./img/Tatiana_Phleganova.png" alt="Татьяна Флеганова">
+                        </picture>
                         <h4>
                             Татьяна Флеганова
                         </h4>
@@ -1969,7 +1982,10 @@
                         </p>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/Pheodor_Prokopiev.png" alt="Фёдор Прокопьев">
+                        <picture>
+                            <source srcset="./img/retina/Pheodor_Prokopiev_2x.png 2x">
+                            <img src="./img/Pheodor_Prokopiev.png" alt="Фёдор Прокопьев">
+                        </picture>
                         <h4>
                             Фёдор Прокопьев
                         </h4>
@@ -1978,7 +1994,10 @@
                         </p>
                     </div>
                     <div class="swiper-slide">
-                        <img src="./img/Svetlana_Kortneva.png" alt="Светлана Кортнева">
+                        <picture>
+                            <source srcset="./img/retina/Svetlana_Kortneva_2x.png 2x">
+                            <img src="./img/Svetlana_Kortneva.png" alt="Светлана Кортнева">
+                        </picture>
                         <h4>
                             Светлана Кортнева
                         </h4>
@@ -1987,13 +2006,15 @@
                         </p>
                     </div>
                 </div>
+            </div>
+            <div class="swiper__btn">
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
             <div class="container">
                 <form class="form" action="#">
+                    <textarea name="Что скажете?"></textarea>
                     <div class="form-container">
-                        <textarea name="Что скажете?"></textarea>
                         <div class="input__container">
                             <span>Ошибка</span>
                             <input required type="text" data-rule="text" placeholder="Имя">
@@ -2003,14 +2024,16 @@
                             <input required type="text" data-rule="email" placeholder="Email">
                         </div>
                     </div>
-                    <button type="submit">
+                    <button class="form__btn" type="submit">
                         Отправить
                     </button>
-                    <label for="checkbox">
-                        <input required type="checkbox" id="checkbox">
-                        <span></span>
-                        Согласие на обработку персональных данных
-                    </label>
+                    <div class="form__agree">
+                        <input required name="genre" id="agree" type="checkbox">
+                        <span class="agree__span"></span>
+                        <label class="agree__label" for="agree">
+                            Согласие на обработку персональных данных
+                        </label>
+                    </div>
                 </form>
             </div>
         </section>
@@ -2085,7 +2108,7 @@
         </div>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer__container">
             <div class="footer__socials">
                 <img src="./img/logo_footer.svg" alt="Логотип wave">
                 <div class="socials__container">
@@ -2179,6 +2202,11 @@
                         </li>
                     </ul>
                 </nav>
+            </div>
+        </div>
+        <div class="footer__wave">
+            <div class="footer__copyright">
+                W-WAVE ® 2021
             </div>
         </div>
     </footer>

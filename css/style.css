@@ -1747,6 +1747,7 @@ h2 {
     flex-direction: column;
     position: relative;
     cursor: pointer;
+    user-select: none;
 }
 
 .autors__item picture {
@@ -1881,6 +1882,16 @@ h2 {
     margin-bottom: 4px;
 }
 
+.autors__item:active .playlists__card__text {
+    background-color: #4F28A5;
+    border: 1px solid #4F28A5;
+}
+
+.autors__item:active svg {
+    width: 56px;
+    height: 56px;
+}
+
 .playlists__card__text {
     padding: 16px;
     border: 1px solid #E6E8EC;
@@ -1983,4 +1994,340 @@ h2 {
     padding: 25px 13.5px;
     border: 2px solid #F0D288;
     border-radius: 100px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+    transition: 0.3s;
+    outline: none;
+}
+
+.margket__link svg g path {
+    transition: 0.3s;
+}
+
+.margket__link:hover {
+    background-color: #F0D288;
+    color: #121723;
+}
+
+.margket__link:hover svg g path:first-child {
+    fill: #121723;
+}
+
+.margket__link:hover svg g path:last-child {
+    fill: #F0D288;
+}
+
+.margket__link:focus-visible {
+    background-color: #BB973E;
+}
+
+.margket__link:focus-visible svg g path:first-child {
+    fill: #F0D288;
+}
+
+.margket__link:focus-visible svg g path:last-child {
+    fill: #121723;
+}
+
+.margket__link:active {
+    background-color: #BB973E;
+    border: 2px solid #BB973E;
+}
+
+.margket__link:active svg g path:last-child {
+    fill: #BB973E;
+}
+
+.about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #121723;
+}
+
+.about__background {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/about_background.svg);
+    background-position: 100% 0%;
+}
+
+.about__head {
+    margin-bottom: 30px;
+}
+
+.about h2 {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin-bottom: 12px;
+}
+
+.about p b {
+    margin-bottom: 8px;
+}
+
+.about p {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #A1A6B4;
+    max-width: 634px;
+}
+
+.swiper {
+    max-width: 1110px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.swiper__btn {
+    position: relative;
+    max-width: 1266px;
+    margin: auto;
+}
+
+.swiper-slide h4 {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+
+.swiper-button-next {
+    width: 48px;
+    height: 48px;
+    top: -260px;
+}
+
+.swiper-button-prev {
+    width: 48px;
+    height: 48px;
+    top: -260px;
+}
+
+.swiper-button-next::after {
+    content: '';
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/arrow_slider.svg);
+    width: 48px;
+    height: 48px;
+    transform: rotate(180deg);
+}
+
+.swiper-button-prev::after {
+    content: '';
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(../img/arrow_slider.svg);
+    width: 48px;
+    height: 48px;
+}
+
+.form textarea {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    color: #A1A6B4;
+    background-color: transparent;
+    height: 150px;
+    border: 1px solid #FFFFFF;
+    border-radius: 30px;
+    width: 100%;
+    resize: none;
+}
+
+.form textarea::placeholder {
+    padding-top: 30px;
+    padding-left: 32px;
+}
+
+.form-container {
+    display: flex;
+    column-gap: 30px;
+}
+
+.agree__label {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 12px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    padding-left: 23px;
+    white-space: nowrap;
+    cursor: pointer;
+    z-index: 2;
+    user-select: none;
+}
+
+.form__agree {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form__agree input {
+    display: none;
+}
+
+.form__agree input+.agree__span {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+    transition: 0.3s;
+    top: -3px;
+}
+
+.form__agree input+.agree__span:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    content: '';
+    background-color: transparent;
+    background-image: url(../img/checkbox_agree.svg);
+    background-repeat: no-repeat;
+    height: 8px;
+    width: 10px;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.form__agree input:checked+.agree__span::before {
+    opacity: 1;
+}
+
+.form__btn {
+    margin-bottom: 0 !important;
+}
+
+.footer {
+    background-color: #292E39;
+    padding-top: 94px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__nav {
+    margin-bottom: 74px;
+}
+
+.footer__nav ul {
+    column-count: 3;
+    gap: 109px;
+}
+
+.footer__nav ul li a {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.footer__nav ul li {
+    margin-bottom: 20px;
+}
+
+.footer__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.socials__container {
+    display: flex;
+    gap: 21px;
+}
+
+.footer__copyright {
+    width: 100%;
+    margin: auto;
+}
+
+.footer__wave {
+    padding-top: 20px;
+    padding-bottom: 8px;
+    text-align: center;
+    background-image: url(../img/footer-wave.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.footer__copyright {
+    font-family: 'Muller', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #A1A6B4;
+}
+
+.socials__container a {
+    outline: none;
+}
+
+.socials__container a svg g path {
+    transition: 0.3s;
+}
+
+.socials__container a svg path {
+    transition: 0.3s;
+}
+
+.socials__container a:hover svg g path {
+    fill: #6D31EE;
+}
+
+.socials__container a svg path {
+    transition: 0.3s;
+}
+
+.socials__container a:hover svg path {
+    fill: #6D31EE;
+}
+
+.socials__container a:focus-visible svg g path {
+    fill: #AA9DFA;
+}
+
+.socials__container a:focus-visible svg path {
+    fill: #AA9DFA;
+}
+
+.socials__container a:active svg g path {
+    fill: #4F28A5;
+}
+
+.socials__container a:active svg path {
+    fill: #4F28A5;
 }
