@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     //Кнопки play stop
-    const playBtn = document.querySelectorAll('.onair__btn');
+    const playBtn = document.querySelectorAll('.play');
     const stops = document.querySelectorAll('.pause');
     const starts = document.querySelectorAll('.start');
 
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     //Аккордеон
     const accordeon = document.getElementById('accordeon');
-    let accordeonBtns = accordeon.querySelectorAll('.accordeon__btn');
+    let accordeonBtns = accordeon.querySelectorAll('.guests__accordeon__btn');
 
     accordeonBtns.forEach(element => {
         element.addEventListener('click', () => {
@@ -153,20 +153,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     //Табы в аккордеоне
-    let tabBtns = accordeon.querySelectorAll('.accordeon__tab');
+    let tabBtns = accordeon.querySelectorAll('.guests__accordeon__tab');
     let biographys = document.querySelectorAll('.guests__detail');
     tabBtns.forEach(tab => {
         tab.addEventListener('click', () => {
             //Удаляем у всех кнопок класс актив
             tabBtns.forEach(tab => {
-                tab.classList.remove('tab--active');
+                tab.classList.remove('guests__accordeon__tab--active');
             });
             //Добавляем нажатой кнопке класс актив и меняем автора
-            tab.classList.add('tab--active');
+            tab.classList.add('guests__accordeon__tab--active');
             biographys.forEach(biography => {
-                biography.classList.remove('detail--active');
+                biography.classList.remove('guests__detail--active');
                 let newAutor = document.getElementById(`${tab.dataset.name}`);
-                newAutor.classList.add('detail--active');
+                newAutor.classList.add('guests__detail--active');
             })
 
         })
