@@ -279,6 +279,7 @@ a {
     width: 0px;
     opacity: 0;
     transition: 0.4s ease-in-out;
+    top: 20px;
 }
 
 .search-form__input-active {
@@ -1792,11 +1793,14 @@ div.onair:last-child {
 
 .playlists__autors__item {
     max-width: 160px;
-    display: flex;
     flex-direction: column;
     position: relative;
     cursor: pointer;
     user-select: none;
+    background-color: transparent;
+    border: none;
+    display: grid;
+    outline: none;
 }
 
 .playlists__autors__picture {
@@ -1867,8 +1871,8 @@ div.onair:last-child {
 }
 
 .playlists__autors__item:focus-visible .playlists__card__text {
-    background-color: #6D31EE;
-    border: 1px solid #6D31EE;
+    background-color: #AA9DFA;
+    border: 1px solid #AA9DFA;
 }
 
 .playlists__autors__item .playlists__card__text__header {
@@ -1887,6 +1891,10 @@ div.onair:last-child {
     color: #FFFFFF;
 }
 
+.playlists__autors__item:focus-visible .playlists__card__text__paragraph {
+    color: #121723;
+}
+
 .rus::before {
     background-image: url(../img/flag_russia.svg);
     background-repeat: no-repeat;
@@ -1895,6 +1903,9 @@ div.onair:last-child {
     position: absolute;
     width: 24px;
     height: 20px;
+    z-index: 1;
+    top: 1px;
+    right: -6px;
 }
 
 .british::before {
@@ -1905,6 +1916,9 @@ div.onair:last-child {
     position: absolute;
     width: 24px;
     height: 20px;
+    z-index: 1;
+    top: 1px;
+    right: -6px;
 }
 
 .autors__country {
@@ -1944,6 +1958,8 @@ div.onair:last-child {
 .playlists__card__text {
     padding: 15px;
     border: 1px solid #E6E8EC;
+    border: 1px solid #E6E8EC;
+    box-sizing: border-box;
 }
 
 .playlists__card__text p {
