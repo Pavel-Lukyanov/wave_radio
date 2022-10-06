@@ -494,7 +494,7 @@ div.onair:last-child {
 }
 
 .header__onair__container .onair__btn svg {
-    top: -9px;
+    top: 0px;
     left: -2px;
 }
 
@@ -1559,6 +1559,10 @@ h2 {
     border: none;
 }
 
+.choices.is-open {
+    z-index: 1;
+}
+
 .choices.is-open .choices__inner {
     border-radius: 10px;
 }
@@ -1597,9 +1601,10 @@ h2 {
     border: 1px solid #6D31EE;
 }
 
-.is-open .choices__list--dropdown,
-.choices__list[aria-expanded] {
-    z-index: -1;
+.choices__list--dropdown {
+    z-index: -1 !important;
+    top: 85%;
+    padding-top: 6px;
 }
 
 .is-highlighted {
