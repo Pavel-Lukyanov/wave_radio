@@ -336,6 +336,7 @@ a {
     transition: 0.3s;
     outline: none;
     padding: 4px 10px;
+    display: block;
 }
 
 .header__nav__item__link:hover {
@@ -374,6 +375,7 @@ a {
     transition: 0.3s;
     padding: 3px 1px 1px 1px;
     outline: none;
+    display: block;
 }
 
 .header__bottom__list__item__link:hover {
@@ -441,9 +443,13 @@ div.onair:last-child {
     border: none;
     cursor: pointer;
     position: relative;
-    margin-right: 29px;
+    margin-right: 15px;
     margin-bottom: 22px;
     outline: none;
+}
+
+.stop {
+    margin-right: 28px;
 }
 
 .pause {
@@ -1801,6 +1807,7 @@ div.onair:last-child {
     border: none;
     display: grid;
     outline: none;
+    padding: 0;
 }
 
 .playlists__autors__picture {
@@ -1904,8 +1911,8 @@ div.onair:last-child {
     width: 24px;
     height: 20px;
     z-index: 1;
-    top: 1px;
-    right: -6px;
+    top: 0;
+    right: 0;
 }
 
 .british::before {
@@ -1917,8 +1924,8 @@ div.onair:last-child {
     width: 24px;
     height: 20px;
     z-index: 1;
-    top: 1px;
-    right: -6px;
+    top: 0;
+    right: 0;
 }
 
 .autors__country {
@@ -1960,6 +1967,7 @@ div.onair:last-child {
     border: 1px solid #E6E8EC;
     border: 1px solid #E6E8EC;
     box-sizing: border-box;
+    text-align: start;
 }
 
 .playlists__card__text p {
