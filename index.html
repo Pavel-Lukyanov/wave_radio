@@ -18,7 +18,12 @@
 </head>
 
 <body>
-    <header class="header__site">
+    <header class="header">
+        <div class="header__mobile">
+            <a class="header__mobile__link" href="#" aria-label="Логотип W-Wave Radio">
+                <img class="header__logo__img" src="./img/logo.svg" alt="Логотип W-Wawe радио">
+            </a>
+        </div>
         <div class="container header__top">
             <a class="header__logo__link" href="#" aria-label="Логотип W-Wave Radio">
                 <img class="header__logo__img" src="./img/logo.svg" alt="Логотип W-Wawe радио">
@@ -169,7 +174,7 @@
         </div>
     </header>
     <main>
-        <div class="container">
+        <!-- <div class="container">
             <section class="main-banner">
                 <h1 class="main-banner__header">
                     Радио <span class="main-banner__header__txt">W-Wawe</span>
@@ -183,10 +188,10 @@
                     Слушать эфир
                 </a>
             </section>
-        </div>
-        <section class="podcasts" id="podcasts">
+        </div> -->
+        <!-- <section class="podcasts" id="podcasts">
             <div class="container">
-                <h2 class="podcasts__header header">
+                <h2 class="podcasts__header headers">
                     Подкасты
                 </h2>
                 <div class="podcasts__cards">
@@ -1029,12 +1034,12 @@
                     Ещё подкасты
                 </button>
             </div>
-        </section>
-        <section class="transmission">
+        </section> -->
+        <!-- <section class="transmission">
             <div class="container" id="transmissoin">
                 <div class="transmission__container">
                     <div class="transmission__autor">
-                        <h2 class="header">
+                        <h2 class="headers">
                             Передачи
                         </h2>
                         <div class="transmission__autor__text">
@@ -1068,8 +1073,10 @@
                         <li class="transmission__cards__item">
                             <a href="#" aria-label="Передача о людях и книгах" class="transmission__cards__item__link">
                                 <picture class="transmission__cards__item__link__picture">
-                                    <source srcset="./img/retina/transmission_1_x2.png 2x">
-                                    <img src="./img/transmission_1.png" alt="О людях и книгах">
+                                    <source class="transmission__cards__img"
+                                        srcset="./img/retina/transmission_1_x2.png 2x">
+                                    <img class="transmission__cards__img" src="./img/transmission_1.png"
+                                        alt="О людях и книгах">
                                 </picture>
                                 <div class="transmission__cards__text">
                                     <h3 class="transmission__cards__header">
@@ -1093,8 +1100,10 @@
                         <li class="transmission__cards__item">
                             <a href="#" aria-label="Передача графомания td" class="transmission__cards__item__link">
                                 <picture class="transmission__cards__item__link__picture">
-                                    <source srcset="./img/retina/transmission_2_x2.png 2x">
-                                    <img src="./img/transmission_2.png" alt="Графомания td">
+                                    <source class="transmission__cards__img"
+                                        srcset="./img/retina/transmission_2_x2.png 2x">
+                                    <img class="transmission__cards__img" src="./img/transmission_2.png"
+                                        alt="Графомания td">
                                 </picture>
                                 <div class="transmission__cards__text">
                                     <h3 class="transmission__cards__header">
@@ -1118,8 +1127,10 @@
                         <li class="transmission__cards__item">
                             <a href="#" aria-label="Передача не Рим, не Троя" class="transmission__cards__item__link">
                                 <picture class="transmission__cards__item__link__picture">
-                                    <source srcset="./img/retina/transmission_3_x2.png 2x">
-                                    <img src="./img/transmission_3.png" alt="Не Рим, не Троя">
+                                    <source class="transmission__cards__img"
+                                        srcset="./img/retina/transmission_3_x2.png 2x">
+                                    <img class="transmission__cards__img" src="./img/transmission_3.png"
+                                        alt="Не Рим, не Троя">
                                 </picture>
                                 <div class="transmission__cards__text">
                                     <h3 class="transmission__cards__header">
@@ -1143,8 +1154,9 @@
                         <li class="transmission__cards__item">
                             <a href="#" aria-label="Передача эрудит" class="transmission__cards__item__link">
                                 <picture class="transmission__cards__item__link__picture">
-                                    <source srcset="./img/retina/transmission_4_x2.png 2x">
-                                    <img src="./img/transmission_4.png" alt="Эрудит">
+                                    <source class="transmission__cards__img"
+                                        srcset="./img/retina/transmission_4_x2.png 2x">
+                                    <img class="transmission__cards__img" src="./img/transmission_4.png" alt="Эрудит">
                                 </picture>
                                 <div class="transmission__cards__text">
                                     <h3 class="transmission__cards__header">
@@ -1168,8 +1180,10 @@
                         <li class="transmission__cards__item">
                             <a href="#" aria-label="Передача тонкости эпох" class="transmission__cards__item__link">
                                 <picture class="transmission__cards__item__link__picture">
-                                    <source srcset="./img/retina/transmission_5_x2.png 2x">
-                                    <img src="./img/transmission_5.png" alt="Тонкости эпох">
+                                    <source class="transmission__cards__img"
+                                        srcset="./img/retina/transmission_5_x2.png 2x">
+                                    <img class="transmission__cards__img" src="./img/transmission_5.png"
+                                        alt="Тонкости эпох">
                                 </picture>
                                 <div class="transmission__cards__text">
                                     <h3 class="transmission__cards__header">
@@ -1193,8 +1207,10 @@
                         <li class="transmission__cards__item">
                             <a href="#" aria-label="Передача живые мысли" class="transmission__cards__item__link">
                                 <picture class="transmission__cards__item__link__picture">
-                                    <source srcset="./img/retina/transmission_6_x2.png 2x">
-                                    <img src="./img/transmission_6.png" alt="Живые мысли">
+                                    <source class="transmission__cards__img"
+                                        srcset="./img/retina/transmission_6_x2.png 2x">
+                                    <img class="transmission__cards__img" src="./img/transmission_6.png"
+                                        alt="Живые мысли">
                                 </picture>
                                 <div class="transmission__cards__text">
                                     <h3 class="transmission__cards__header">
@@ -1218,10 +1234,10 @@
                     </ul>
                 </div>
             </div>
-        </section>
-        <section class="guests" id="guests">
+        </section> -->
+        <!-- <section class="guests" id="guests">
             <div class="container">
-                <h2 class="guests__color header">
+                <h2 class="guests__color headers">
                     Гости
                 </h2>
                 <p class="guests__description">
@@ -1259,7 +1275,8 @@
                                 <button class="guests__accordeon__tab" data-name="unknown-name">
                                     Матвей Мечников
                                 </button>
-                                <button class="guests__accordeon__tab guests__accordeon__tab--active" data-name="Olga-Martinova">
+                                <button class="guests__accordeon__tab guests__accordeon__tab--active"
+                                    data-name="Olga-Martinova">
                                     Ольга Мартынова
                                 </button>
                                 <button class="guests__accordeon__tab" data-name="unknown-name">
@@ -1414,8 +1431,8 @@
                     </div>
                     <div id="unknown-name" class="guests__detail">
                         <picture class="guests__detail__picture">
-                            <source srcset="./img/retina/guests_x2.png 2x">
-                            <img src="./img/guests.png" alt="Ольга Мартынова">
+                            <source class="guests__detail__img" srcset="./img/retina/guests_x2.png 2x">
+                            <img class="guests__detail__img" src="./img/guests.png" alt="Ольга Мартынова">
                         </picture>
                         <div class="guests__detail__socials">
                             <a class="guests__detail__socials__link" href="#" aria-label="Instagram">
@@ -1476,8 +1493,8 @@
                     </div>
                     <div id="Olga-Martinova" class="guests__detail guests__detail--active">
                         <picture class="guests__detail__picture">
-                            <source srcset="./img/retina/Olga_Martinova_x2.png 2x">
-                            <img src="./img/Olga_Martinova.png" alt="Ольга Мартынова">
+                            <source class="guests__detail__img" srcset="./img/retina/Olga_Martinova_x2.png 2x">
+                            <img class="guests__detail__img" src="./img/Olga_Martinova.png" alt="Ольга Мартынова">
                         </picture>
                         <div class="guests__detail__socials">
                             <a class="guests__detail__socials__link" href="#" aria-label="Instagram">
@@ -1540,11 +1557,11 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="container">
+        </section> -->
+        <!-- <div class="container">
             <section class="playlists" id="playlists">
                 <form action="#" class="playlists__form">
-                    <h2 class="header">
+                    <h2 class="headers">
                         Плейлисты
                     </h2>
                     <p class="playlists__form__genre">
@@ -1615,7 +1632,8 @@
                 </form>
                 <div class="playlists__warning">
                     <p class="playlists__warning__paragraph">
-                        Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних<br> © 2021 | W-Wave
+                        Раздел «Плейлисты» может содержать информацию, не предназначенную для несовершеннолетних<br>
+                        <span class="playlists__warning__decor">© 2021 | W-Wave</span>
                     </p>
                     <span class="playlists__warning__age">18+</span>
                 </div>
@@ -1630,7 +1648,7 @@
                             </path>
                         </svg>
                         <picture class="playlists__autors__picture">
-                            <source srcset="./img/retina/ploho_2x.png 2x">
+                            <source class="playlists__autors__item__img" srcset="./img/retina/ploho_2x.png 2x">
                             <img class="playlists__autors__item__img" src="./img/ploho.png" alt="Группа Ploho">
                         </picture>
                         <div class="playlists__card__text">
@@ -1652,8 +1670,9 @@
                             </path>
                         </svg>
                         <picture class="playlists__autors__picture">
-                            <source srcset="./img/retina/Molchat_Doma_2x.png 2x">
-                            <img class="playlists__autors__item__img" src="./img/Molchat_Doma.png" alt="Группа Molchat Doma">
+                            <source class="playlists__autors__item__img" srcset="./img/retina/Molchat_Doma_2x.png 2x">
+                            <img class="playlists__autors__item__img" src="./img/Molchat_Doma.png"
+                                alt="Группа Molchat Doma">
                         </picture>
                         <div class="playlists__card__text">
                             <h3 class="playlists__card__text__header">
@@ -1674,7 +1693,7 @@
                             </path>
                         </svg>
                         <picture class="playlists__autors__picture">
-                            <source srcset="./img/retina/Motorama_2x.png 2x">
+                            <source class="playlists__autors__item__img" srcset="./img/retina/Motorama_2x.png 2x">
                             <img class="playlists__autors__item__img" src="./img/Motorama.png" alt="Группа Motorama">
                         </picture>
                         <div class="playlists__card__text">
@@ -1696,8 +1715,9 @@
                             </path>
                         </svg>
                         <picture class="playlists__autors__picture">
-                            <source srcset="./img/retina/Human_Tetris_2x.png 2x">
-                            <img class="playlists__autors__item__img" src="./img/Human_Tetris.png" alt="Группа Human Tetris">
+                            <source class="playlists__autors__item__img" srcset="./img/retina/Human_Tetris_2x.png 2x">
+                            <img class="playlists__autors__item__img" src="./img/Human_Tetris.png"
+                                alt="Группа Human Tetris">
                         </picture>
                         <div class="playlists__card__text">
                             <h3 class="playlists__card__text__header">
@@ -1718,7 +1738,7 @@
                             </path>
                         </svg>
                         <picture class="playlists__autors__picture">
-                            <source srcset="./img/retina/buerak_2x.png 2x">
+                            <source class="playlists__autors__item__img" srcset="./img/retina/buerak_2x.png 2x">
                             <img class="playlists__autors__item__img" src="./img/buerak.png" alt="Группа Буерак">
                         </picture>
                         <div class="playlists__card__text">
@@ -1740,8 +1760,9 @@
                             </path>
                         </svg>
                         <picture class="playlists__autors__picture">
-                            <source srcset="./img/retina/july_days_2x.png 2x">
-                            <img class="playlists__autors__item__img" src="./img/july_days.png" alt="Группа Июльские Дни">
+                            <source class="playlists__autors__item__img" srcset="./img/retina/july_days_2x.png 2x">
+                            <img class="playlists__autors__item__img" src="./img/july_days.png"
+                                alt="Группа Июльские Дни">
                         </picture>
                         <div class="playlists__card__text">
                             <h3 class="playlists__card__text__header">
@@ -1762,8 +1783,9 @@
                             </path>
                         </svg>
                         <picture class="playlists__autors__picture">
-                            <source srcset="./img/retina/Joy_Division_2x.png 2x">
-                            <img class="playlists__autors__item__img" src="./img/Joy_Division.png" alt="Группа Joy Division">
+                            <source class="playlists__autors__item__img" srcset="./img/retina/Joy_Division_2x.png 2x">
+                            <img class="playlists__autors__item__img" src="./img/Joy_Division.png"
+                                alt="Группа Joy Division">
                         </picture>
                         <div class="playlists__card__text">
                             <h3 class="playlists__card__text__header">
@@ -1784,7 +1806,7 @@
                             </path>
                         </svg>
                         <picture class="playlists__autors__picture">
-                            <source srcset="./img/retina/The_Cure_2x.png 2x">
+                            <source class="playlists__autors__item__img" srcset="./img/retina/The_Cure_2x.png 2x">
                             <img class="playlists__autors__item__img" src="./img/The_Cure.png" alt="Группа The Cure">
                         </picture>
                         <div class="playlists__card__text">
@@ -1806,8 +1828,9 @@
                             </path>
                         </svg>
                         <picture class="playlists__autors__picture">
-                            <source srcset="./img/retina/The_Smiths_2x.png 2x">
-                            <img class="playlists__autors__item__img" src="./img/The_Smiths.png" alt="Группа The Smiths">
+                            <source class="playlists__autors__item__img" srcset="./img/retina/The_Smiths_2x.png 2x">
+                            <img class="playlists__autors__item__img" src="./img/The_Smiths.png"
+                                alt="Группа The Smiths">
                         </picture>
                         <div class="playlists__card__text">
                             <h3 class="playlists__card__text__header">
@@ -1828,7 +1851,7 @@
                             </path>
                         </svg>
                         <picture class="playlists__autors__picture">
-                            <source srcset="./img/retina/New_Order_2x.png 2x">
+                            <source class="playlists__autors__item__img" srcset="./img/retina/New_Order_2x.png 2x">
                             <img class="playlists__autors__item__img" src="./img/New_Order.png" alt="Группа New Order">
                         </picture>
                         <div class="playlists__card__text">
@@ -1850,7 +1873,7 @@
                             </path>
                         </svg>
                         <picture class="playlists__autors__picture">
-                            <source srcset="./img/retina/Bauhaus_2x.png 2x">
+                            <source class="playlists__autors__item__img" srcset="./img/retina/Bauhaus_2x.png 2x">
                             <img class="playlists__autors__item__img" src="./img/Bauhaus.png" alt="Группа Bauhaus">
                         </picture>
                         <div class="playlists__card__text">
@@ -1872,8 +1895,9 @@
                             </path>
                         </svg>
                         <picture class="playlists__autors__picture">
-                            <source srcset="./img/retina/Gang_Of_Four_2x.png 2x">
-                            <img class="playlists__autors__item__img" src="./img/Gang_Of_Four.png" alt="Группа Gang Of Four">
+                            <source class="playlists__autors__item__img" srcset="./img/retina/Gang_Of_Four_2x.png 2x">
+                            <img class="playlists__autors__item__img" src="./img/Gang_Of_Four.png"
+                                alt="Группа Gang Of Four">
                         </picture>
                         <div class="playlists__card__text">
                             <h3 class="playlists__card__text__header">
@@ -1886,10 +1910,13 @@
                     </button>
                 </div>
             </section>
-        </div>
-        <section class="market">
+        </div> -->
+        <!-- <section class="market">
             <div class="container market__container">
-                <img class="container market__container__img" src="./img/radio.png" alt="Изображение радио">
+                <picture>
+                    <source class="market__container__img" srcset="./img/retina/radio_2x.png 2x">
+                    <img class="market__container__img" src="./img/radio.png" alt="Изображение радио">
+                </picture>
                 <div class="market__text">
                     <h3 class="market__text__header">
                         Будь с нами<br>на одной волне!
@@ -1928,8 +1955,8 @@
                     </a>
                 </div>
             </div>
-        </section>
-        <section class="about" id="about">
+        </section> -->
+        <!-- <section class="about" id="about">
             <div class="container about__background">
                 <div class="about__content">
                     <h2 class="about__content__header header">
@@ -1947,79 +1974,81 @@
                     </p>
                 </div>
             </div>
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <picture class="swiper-slide__picture">
-                            <source srcset="./img/retina/Dmitrii_Gutenberg_2x.png 2x">
-                            <img src="./img/Dmitrii_Gutenberg.png" alt="Дмитрий Гутенберг">
-                        </picture>
-                        <h4 class="swiper-slide__header">
-                            Дмитрий Гутенберг
-                        </h4>
-                        <p class="swiper-slide__paragraph">
-                            Эксперт (ну, почти) по всем вопросам (почти)
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture class="swiper-slide__picture">
-                            <source srcset="./img/retina/Anna_Vasilieva_2x.png 2x">
-                            <img src="./img/Anna_Vasilieva.png" alt="Анна Васильева">
-                        </picture>
-                        <h4 class="swiper-slide__header">
-                            Анна Васильева
-                        </h4>
-                        <p class="swiper-slide__paragraph">
-                            Как я здесь оказалась? А главное — зачем?
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture class="swiper-slide__picture">
-                            <source srcset="./img/retina/Petr_Dmitrievskiy_2x.png 2x">
-                            <img src="./img/Petr_Dmitrievskiy.png" alt="Пётр Дмитриевский">
-                        </picture>
-                        <h4 class="swiper-slide__header">
-                            Пётр Дмитриевский
-                        </h4>
-                        <p class="swiper-slide__paragraph">
-                            Господа! Внимание! Благодарю за внимание!
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture class="swiper-slide__picture">
-                            <source srcset="./img/retina/Tatiana_Phleganova_2x.png 2x">
-                            <img src="./img/Tatiana_Phleganova.png" alt="Татьяна Флеганова">
-                        </picture>
-                        <h4 class="swiper-slide__header">
-                            Татьяна Флеганова
-                        </h4>
-                        <p class="swiper-slide__paragraph">
-                            Одна я в пальто стою красивая, а вокруг…
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture class="swiper-slide__picture">
-                            <source srcset="./img/retina/Pheodor_Prokopiev_2x.png 2x">
-                            <img src="./img/Pheodor_Prokopiev.png" alt="Фёдор Прокопьев">
-                        </picture>
-                        <h4 class="swiper-slide__header">
-                            Фёдор Прокопьев
-                        </h4>
-                        <p class="swiper-slide__paragraph">
-                            Привет! Я фотограф, музыкант, ведущий
-                        </p>
-                    </div>
-                    <div class="swiper-slide">
-                        <picture class="swiper-slide__picture">
-                            <source srcset="./img/retina/Svetlana_Kortneva_2x.png 2x">
-                            <img src="./img/Svetlana_Kortneva.png" alt="Светлана Кортнева">
-                        </picture>
-                        <h4 class="swiper-slide__header">
-                            Светлана Кортнева
-                        </h4>
-                        <p class="swiper-slide__paragraph">
-                            Художник-оформитель. Оформляю
-                        </p>
+            <div class="center">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture class="swiper-slide__picture">
+                                <source srcset="./img/retina/Dmitrii_Gutenberg_2x.png 2x">
+                                <img src="./img/Dmitrii_Gutenberg.png" alt="Дмитрий Гутенберг">
+                            </picture>
+                            <h4 class="swiper-slide__header">
+                                Дмитрий Гутенберг
+                            </h4>
+                            <p class="swiper-slide__paragraph">
+                                Эксперт (ну, почти) по всем вопросам (почти)
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="swiper-slide__picture">
+                                <source srcset="./img/retina/Anna_Vasilieva_2x.png 2x">
+                                <img src="./img/Anna_Vasilieva.png" alt="Анна Васильева">
+                            </picture>
+                            <h4 class="swiper-slide__header">
+                                Анна Васильева
+                            </h4>
+                            <p class="swiper-slide__paragraph">
+                                Как я здесь оказалась? А главное — зачем?
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="swiper-slide__picture">
+                                <source srcset="./img/retina/Petr_Dmitrievskiy_2x.png 2x">
+                                <img src="./img/Petr_Dmitrievskiy.png" alt="Пётр Дмитриевский">
+                            </picture>
+                            <h4 class="swiper-slide__header">
+                                Пётр Дмитриевский
+                            </h4>
+                            <p class="swiper-slide__paragraph">
+                                Господа! Внимание! Благодарю за внимание!
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="swiper-slide__picture">
+                                <source srcset="./img/retina/Tatiana_Phleganova_2x.png 2x">
+                                <img src="./img/Tatiana_Phleganova.png" alt="Татьяна Флеганова">
+                            </picture>
+                            <h4 class="swiper-slide__header">
+                                Татьяна Флеганова
+                            </h4>
+                            <p class="swiper-slide__paragraph">
+                                Одна я в пальто стою красивая, а вокруг…
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="swiper-slide__picture">
+                                <source srcset="./img/retina/Pheodor_Prokopiev_2x.png 2x">
+                                <img src="./img/Pheodor_Prokopiev.png" alt="Фёдор Прокопьев">
+                            </picture>
+                            <h4 class="swiper-slide__header">
+                                Фёдор Прокопьев
+                            </h4>
+                            <p class="swiper-slide__paragraph">
+                                Привет! Я фотограф, музыкант, ведущий
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture class="swiper-slide__picture">
+                                <source srcset="./img/retina/Svetlana_Kortneva_2x.png 2x">
+                                <img src="./img/Svetlana_Kortneva.png" alt="Светлана Кортнева">
+                            </picture>
+                            <h4 class="swiper-slide__header">
+                                Светлана Кортнева
+                            </h4>
+                            <p class="swiper-slide__paragraph">
+                                Художник-оформитель. Оформляю
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2052,7 +2081,7 @@
                     </div>
                 </form>
             </div>
-        </section>
+        </section> -->
         <div id="enter" class="popup">
             <div class="popup__container">
                 <div class="popup__content">
@@ -2123,7 +2152,7 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container footer__container">
             <div class="footer__socials">
                 <a class="footer__socials__logo-link" href="#">
@@ -2231,7 +2260,7 @@
                 W-WAVE ® 2021
             </div>
         </div>
-    </footer>
+    </footer> -->
 </body>
 
 </html>

@@ -142,6 +142,16 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     }
 
+    //Select
+    const element = document.getElementById('selectCustom');
+    const choices = new Choices(element, {
+        searchEnabled: false,
+        itemSelectText: '',
+        allowHTML: true,
+        position: String,
+    });
+
+
     //Аккордеон
     const accordeon = document.getElementById('accordeon');
     let accordeonBtns = accordeon.querySelectorAll('.guests__accordeon__btn');
@@ -172,17 +182,6 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     });
 
-
-    //Select
-    const element = document.getElementById('selectCustom');
-    const choices = new Choices(element, {
-        searchEnabled: false,
-        itemSelectText: '',
-        allowHTML: true,
-        position: String,
-    });
-
-
     //swiper
     const swiper = new Swiper('.swiper', {
         // Optional parameters
@@ -190,11 +189,34 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
         slidesPerView: 4,
         spaceBetween: 30,
-      
+
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            855: {
+                slidesPerView: 2.5,
+                spaceBetween: 30
+            },
+            968: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            },
+            1230: {
+                slidesPerView: 4,
+                spaceBetween: 30
+            }
+        },
+
         // Navigation arrows
         navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
         },
-      });
+    });
 });
