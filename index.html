@@ -23,12 +23,41 @@
             <a class="header__mobile__link" href="#" aria-label="Логотип W-Wave Radio">
                 <img class="header__logo__img" src="./img/logo.svg" alt="Логотип W-Wawe радио">
             </a>
+            <div id="menuContainer" class="header__mobile__menu">
+                <button id="menuClose" class="header__mobile__burger-btn" aria-label="Меню">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="4.5752" y="2.95406" width="24" height="3" rx="1.5"
+                            transform="rotate(45 4.5752 2.95406)" fill="#6D31EE" />
+                        <rect x="21.5459" y="5.07538" width="24" height="3" rx="1.5"
+                            transform="rotate(135 21.5459 5.07538)" fill="#6D31EE" />
+                    </svg>
+                </button>
+                <div class="header__mobile__container">
+                </div>
+            </div>
+            <button data-pointer="enter" class="header__mobile__btn btn-enter">
+                Вход
+            </button>
         </div>
         <div class="container header__top">
             <a class="header__logo__link" href="#" aria-label="Логотип W-Wave Radio">
                 <img class="header__logo__img" src="./img/logo.svg" alt="Логотип W-Wawe радио">
             </a>
-            <nav class="header__nav">
+            <button id="menuBtn" class="header__top__burger-btn" aria-label="Меню">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_24531_4514)">
+                        <rect width="24" height="3" rx="1.5" fill="#6D31EE" />
+                        <rect y="21" width="24" height="3" rx="1.5" fill="#6D31EE" />
+                        <rect y="11" width="24" height="3" rx="1.5" fill="#6D31EE" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_24531_4514">
+                            <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+            <nav id="topMenu" class="header__nav">
                 <ul class="header__nav__list">
                     <li class="header__nav__list__item">
                         <a class="header__nav__item__link" href="#podcasts">
@@ -77,6 +106,11 @@
         </div>
         <div class="header__bottom__border">
             <div class="container header__bottom">
+                <button id="openOnair" class="header__bottom__onair">
+                    Что в эфире?
+                </button>
+                <div class="header__bottom__onair__container">
+                </div>
                 <nav class="header__bottom__nav">
                     <ul class="header__bottom__list">
                         <li class="header__bottom__list__item">
@@ -111,7 +145,23 @@
                         </li>
                     </ul>
                 </nav>
-                <div class="header__onair__container">
+                <button class="header__onair__mobile play" aria-label="Ранее в эфире">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
+                            fill="#A1A6B4" />
+                    </svg>
+                    <svg class="pause" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0Z"
+                            fill="#A1A6B4" />
+                        <rect x="7" y="6" width="2" height="8" rx="1" fill="white" />
+                        <rect x="11" y="6" width="2" height="8" rx="1" fill="white" />
+                    </svg>
+                </button>
+                <div id="onairBtn" class="header__onair__container">
                     <div class="onair">
                         <button class="play" aria-label="Ранее в эфире">
                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -174,7 +224,7 @@
         </div>
     </header>
     <main>
-        <!-- <div class="container">
+        <div class="container">
             <section class="main-banner">
                 <h1 class="main-banner__header">
                     Радио <span class="main-banner__header__txt">W-Wawe</span>
@@ -188,8 +238,8 @@
                     Слушать эфир
                 </a>
             </section>
-        </div> -->
-        <!-- <section class="podcasts" id="podcasts">
+        </div>
+        <section class="podcasts" id="podcasts">
             <div class="container">
                 <h2 class="podcasts__header headers">
                     Подкасты
@@ -198,7 +248,7 @@
                     <div class="podcasts__item">
                         <div class="podcasts__img">
                             <picture class="podcasts__img__picture">
-                                <source srcset="./img/retina/podcasts_1_x2.png 2x">
+                                <source class="podcasts__img__picture__img" srcset="./img/retina/podcasts_1_x2.png 2x">
                                 <img class="podcasts__img__picture__img" src="./img/podcasts_1.png"
                                     alt="Европа 19 века">
                             </picture>
@@ -268,7 +318,7 @@
                     <div class="podcasts__item">
                         <div class="podcasts__img">
                             <picture class="podcasts__img__picture">
-                                <source srcset="./img/retina/podcasts_2_x2.png 2x">
+                                <source class="podcasts__img__picture__img" srcset="./img/retina/podcasts_2_x2.png 2x">
                                 <img class="podcasts__img__picture__img" src="./img/podcasts_2.png" alt="О музыке">
                             </picture>
                             <span class="podcasts__img__date">11 июня</span>
@@ -337,7 +387,7 @@
                     <div class="podcasts__item">
                         <div class="podcasts__img">
                             <picture class="podcasts__img__picture">
-                                <source srcset="./img/retina/podcasts_3_x2.png 2x">
+                                <source class="podcasts__img__picture__img" srcset="./img/retina/podcasts_3_x2.png 2x">
                                 <img class="podcasts__img__picture__img" src="./img/podcasts_3.png" alt="Люди сегодня">
                             </picture>
                             <span class="podcasts__img__date">8 июня</span>
@@ -406,7 +456,7 @@
                     <div class="podcasts__item">
                         <div class="podcasts__img">
                             <picture class="podcasts__img__picture">
-                                <source srcset="./img/retina/podcasts_4_x2.png 2x">
+                                <source class="podcasts__img__picture__img" srcset="./img/retina/podcasts_4_x2.png 2x">
                                 <img class="podcasts__img__picture__img" src="./img/podcasts_4.png"
                                     alt="Хэллоу, Африка!">
                             </picture>
@@ -476,7 +526,7 @@
                     <div class="podcasts__item">
                         <div class="podcasts__img">
                             <picture class="podcasts__img__picture">
-                                <source srcset="./img/retina/podcasts_5_x2.png 2x">
+                                <source class="podcasts__img__picture__img" srcset="./img/retina/podcasts_5_x2.png 2x">
                                 <img class="podcasts__img__picture__img" src="./img/podcasts_5.png" alt="Обо всём">
                             </picture>
                             <span class="podcasts__img__date">2 июня</span>
@@ -545,7 +595,7 @@
                     <div class="podcasts__item">
                         <div class="podcasts__img">
                             <picture class="podcasts__img__picture">
-                                <source srcset="./img/retina/podcasts_6_x2.png 2x">
+                                <source class="podcasts__img__picture__img" srcset="./img/retina/podcasts_6_x2.png 2x">
                                 <img class="podcasts__img__picture__img" src="./img/podcasts_6.png" alt="Физика цвета">
                             </picture>
                             <span class="podcasts__img__date">28 мая</span>
@@ -614,7 +664,7 @@
                     <div class="podcasts__item">
                         <div class="podcasts__img">
                             <picture class="podcasts__img__picture">
-                                <source srcset="./img/retina/podcasts_7_x2.png 2x">
+                                <source class="podcasts__img__picture__img" srcset="./img/retina/podcasts_7_x2.png 2x">
                                 <img class="podcasts__img__picture__img" src="./img/podcasts_7.png"
                                     alt="Источник звука">
                             </picture>
@@ -684,7 +734,7 @@
                     <div class="podcasts__item">
                         <div class="podcasts__img">
                             <picture class="podcasts__img__picture">
-                                <source srcset="./img/retina/podcasts_8_x2.png 2x">
+                                <source class="podcasts__img__picture__img" srcset="./img/retina/podcasts_8_x2.png 2x">
                                 <img class="podcasts__img__picture__img" src="./img/podcasts_8.png"
                                     alt="Правила этикета">
                             </picture>
@@ -754,7 +804,7 @@
                     <div class="podcasts__item invisible-cards">
                         <div class="podcasts__img">
                             <picture class="podcasts__img__picture">
-                                <source srcset="./img/retina/podcasts_1_x2.png 2x">
+                                <source class="podcasts__img__picture__img" srcset="./img/retina/podcasts_1_x2.png 2x">
                                 <img class="podcasts__img__picture__img" src="./img/podcasts_1.png"
                                     alt="Европа 19 века">
                             </picture>
@@ -824,7 +874,7 @@
                     <div class="podcasts__item invisible-cards">
                         <div class="podcasts__img">
                             <picture class="podcasts__img__picture">
-                                <source srcset="./img/retina/podcasts_2_x2.png 2x">
+                                <source class="podcasts__img__picture__img" srcset="./img/retina/podcasts_2_x2.png 2x">
                                 <img class="podcasts__img__picture__img" src="./img/podcasts_2.png" alt="О музыке">
                             </picture>
                             <span class="podcasts__img__date">11 июня</span>
@@ -893,7 +943,7 @@
                     <div class="podcasts__item invisible-cards">
                         <div class="podcasts__img">
                             <picture class="podcasts__img__picture">
-                                <source srcset="./img/retina/podcasts_3_x2.png 2x">
+                                <source class="podcasts__img__picture__img" srcset="./img/retina/podcasts_3_x2.png 2x">
                                 <img class="podcasts__img__picture__img" src="./img/podcasts_3.png" alt="Люди сегодня">
                             </picture>
                             <span class="podcasts__img__date">8 июня</span>
@@ -962,7 +1012,7 @@
                     <div class="podcasts__item invisible-cards">
                         <div class="podcasts__img">
                             <picture class="podcasts__img__picture">
-                                <source srcset="./img/retina/podcasts_4_x2.png 2x">
+                                <source class="podcasts__img__picture__img" srcset="./img/retina/podcasts_4_x2.png 2x">
                                 <img class="podcasts__img__picture__img" src="./img/podcasts_4.png"
                                     alt="Хэллоу, Африка!">
                             </picture>
@@ -1034,8 +1084,8 @@
                     Ещё подкасты
                 </button>
             </div>
-        </section> -->
-        <!-- <section class="transmission">
+        </section>
+        <section class="transmission">
             <div class="container" id="transmissoin">
                 <div class="transmission__container">
                     <div class="transmission__autor">
@@ -1234,8 +1284,8 @@
                     </ul>
                 </div>
             </div>
-        </section> -->
-        <!-- <section class="guests" id="guests">
+        </section>
+        <section class="guests" id="guests">
             <div class="container">
                 <h2 class="guests__color headers">
                     Гости
@@ -1557,7 +1607,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- <div class="container">
             <section class="playlists" id="playlists">
                 <form action="#" class="playlists__form">

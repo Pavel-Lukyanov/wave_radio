@@ -16,48 +16,36 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
 
+    //Бургер меню
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('menuContainer');
+    const menuClose = document.getElementById('menuClose');
+    const menuContent = document.querySelector('.header__mobile__container');
+    const topMenu = document.getElementById('topMenu');
+    const bottomMenu = document.querySelector('.header__bottom__nav');
+    menuContent.innerHTML = topMenu.innerHTML;
 
-    //Кнопки play stop
-    const playBtn = document.querySelectorAll('.play');
-    const stops = document.querySelectorAll('.pause');
-    const starts = document.querySelectorAll('.start');
+    btn.addEventListener('click', showMenu);
+    menuClose.addEventListener('click', showMenu);
 
-    playBtn.forEach(el => {
-        el.addEventListener('click', () => {
-            let stop = el.querySelector('.pause');
-            let start = el.querySelector('.start');
-            if (stop.classList.contains('onair-btn-active')) {
-                stop.classList.remove('onair-btn-active');
-                start.classList.remove('start-active');
-            } else {
-                stops.forEach(stoped => {
-                    stoped.classList.remove('onair-btn-active');
-                })
-                starts.forEach(started => {
-                    started.classList.remove('start-active');
-                })
-                stop.classList.add('onair-btn-active');
-                start.classList.add('start-active');
-            }
-        });
-    });
+    function showMenu() {
+        menu.classList.toggle('menu-show');
+    }
 
+    if (window.screen.width <= 700) {
+        menuContainer.innerHTML = menuContainer.innerHTML + bottomMenu.innerHTML;
+        const menuCloseBtn = document.getElementById('menuClose');
+        menuCloseBtn.addEventListener('click', showMenu);
+    }
 
-
-    //Показать больше карточек из подкаста
-    const cards = document.querySelectorAll('.invisible-cards');
-    let showCardsBtn = document.getElementById('showMore');
-
-    showCardsBtn.addEventListener('click', () => {
-        cards.forEach(el => {
-            el.classList.toggle('visible-cards');
-        })
-        console.log(showCardsBtn.textContent);
-        if (showCardsBtn.textContent.trim() === 'Ещё подкасты') {
-            showCardsBtn.textContent = 'Скрыть';
-        } else {
-            showCardsBtn.textContent = 'Ещё подкасты';
-        }
+    //Кнопка что в эфире
+    const openOnair = document.getElementById('openOnair');
+    const onairMenu = document.querySelector('.header__bottom__onair__container');
+    const onairBtn = document.getElementById('onairBtn');
+    onairMenu.innerHTML = onairBtn.innerHTML;
+    openOnair.addEventListener('click', () => {
+        onairMenu.classList.toggle('is-opened');
+        openOnair.parentNode.classList.toggle('is-opened');
     })
 
 
@@ -108,6 +96,49 @@ document.addEventListener("DOMContentLoaded", function () {
     const popups = document.querySelectorAll('.popup')
     let popupsObj = {}
     if (popups.length > 0) popups.forEach(item => { popupsObj[item.id] = new Popup(item) })
+
+    //Кнопки play stop
+    const playBtn = document.querySelectorAll('.play');
+    const stops = document.querySelectorAll('.pause');
+    const starts = document.querySelectorAll('.start');
+
+    playBtn.forEach(el => {
+        el.addEventListener('click', () => {
+            let stop = el.querySelector('.pause');
+            let start = el.querySelector('.start');
+            if (stop.classList.contains('onair-btn-active')) {
+                stop.classList.remove('onair-btn-active');
+                start.classList.remove('start-active');
+            } else {
+                stops.forEach(stoped => {
+                    stoped.classList.remove('onair-btn-active');
+                })
+                starts.forEach(started => {
+                    started.classList.remove('start-active');
+                })
+                stop.classList.add('onair-btn-active');
+                start.classList.add('start-active');
+            }
+        });
+    });
+
+
+
+    //Показать больше карточек из подкаста
+    const cards = document.querySelectorAll('.invisible-cards');
+    let showCardsBtn = document.getElementById('showMore');
+
+    showCardsBtn.addEventListener('click', () => {
+        cards.forEach(el => {
+            el.classList.toggle('visible-cards');
+        })
+        console.log(showCardsBtn.textContent);
+        if (showCardsBtn.textContent.trim() === 'Ещё подкасты') {
+            showCardsBtn.textContent = 'Скрыть';
+        } else {
+            showCardsBtn.textContent = 'Ещё подкасты';
+        }
+    })
 
     //Валидация форм
     let validInputs = document.querySelectorAll('input[data-rule]');
