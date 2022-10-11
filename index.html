@@ -146,8 +146,7 @@
                     </ul>
                 </nav>
                 <button class="header__onair__mobile play" aria-label="Ранее в эфире">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M10 0C4.475 0 0 4.475 0 10C0 15.525 4.475 20 10 20C15.525 20 20 15.525 20 10C20 4.475 15.525 0 10 0ZM8 14.5V5.5L14 10L8 14.5Z"
                             fill="#A1A6B4" />
@@ -1110,7 +1109,7 @@
                             </option>
                         </select>
                     </div>
-                    <div class="transmission__archive">
+                    <div class="transmission__archive transmission__desktop">
                         <div class="archive-img"></div>
                         <a class="transmission__link" href="#">
                             Архив
@@ -1282,6 +1281,17 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+            </div>
+            <div class="transmission__archive transmission__mobile">
+                <div class="archive-img"></div>
+                <div class="transmission__content">
+                    <a class="transmission__link" href="#">
+                        Архив
+                    </a>
+                    <p class="transmission__text">
+                        В архив попадают все передачи, которые вы пропустили! Enjoy:)
+                    </p>
                 </div>
             </div>
         </section>
@@ -1608,7 +1618,7 @@
                 </div>
             </div>
         </section>
-        <!-- <div class="container">
+        <div class="container">
             <section class="playlists" id="playlists">
                 <form action="#" class="playlists__form">
                     <h2 class="headers">
@@ -1816,7 +1826,7 @@
                         </picture>
                         <div class="playlists__card__text">
                             <h3 class="playlists__card__text__header">
-                                Июльские Дни
+                                Июльские Дни
                             </h3>
                             <p class="playlists__card__text__paragraph">
                                 Альбом «Колокол»
@@ -1960,8 +1970,8 @@
                     </button>
                 </div>
             </section>
-        </div> -->
-        <!-- <section class="market">
+        </div>
+        <section class="market">
             <div class="container market__container">
                 <picture>
                     <source class="market__container__img" srcset="./img/retina/radio_2x.png 2x">
@@ -2005,8 +2015,8 @@
                     </a>
                 </div>
             </div>
-        </section> -->
-        <!-- <section class="about" id="about">
+        </section>
+        <section class="about" id="about">
             <div class="container about__background">
                 <div class="about__content">
                     <h2 class="about__content__header header">
@@ -2029,8 +2039,8 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <picture class="swiper-slide__picture">
-                                <source srcset="./img/retina/Dmitrii_Gutenberg_2x.png 2x">
-                                <img src="./img/Dmitrii_Gutenberg.png" alt="Дмитрий Гутенберг">
+                                <source class="swiper-slide__img" srcset="./img/retina/Dmitrii_Gutenberg_2x.png 2x">
+                                <img class="swiper-slide__img" src="./img/Dmitrii_Gutenberg.png" alt="Дмитрий Гутенберг">
                             </picture>
                             <h4 class="swiper-slide__header">
                                 Дмитрий Гутенберг
@@ -2041,8 +2051,8 @@
                         </div>
                         <div class="swiper-slide">
                             <picture class="swiper-slide__picture">
-                                <source srcset="./img/retina/Anna_Vasilieva_2x.png 2x">
-                                <img src="./img/Anna_Vasilieva.png" alt="Анна Васильева">
+                                <source class="swiper-slide__img" srcset="./img/retina/Anna_Vasilieva_2x.png 2x">
+                                <img class="swiper-slide__img" src="./img/Anna_Vasilieva.png" alt="Анна Васильева">
                             </picture>
                             <h4 class="swiper-slide__header">
                                 Анна Васильева
@@ -2053,8 +2063,8 @@
                         </div>
                         <div class="swiper-slide">
                             <picture class="swiper-slide__picture">
-                                <source srcset="./img/retina/Petr_Dmitrievskiy_2x.png 2x">
-                                <img src="./img/Petr_Dmitrievskiy.png" alt="Пётр Дмитриевский">
+                                <source class="swiper-slide__img" srcset="./img/retina/Petr_Dmitrievskiy_2x.png 2x">
+                                <img class="swiper-slide__img" src="./img/Petr_Dmitrievskiy.png" alt="Пётр Дмитриевский">
                             </picture>
                             <h4 class="swiper-slide__header">
                                 Пётр Дмитриевский
@@ -2065,8 +2075,8 @@
                         </div>
                         <div class="swiper-slide">
                             <picture class="swiper-slide__picture">
-                                <source srcset="./img/retina/Tatiana_Phleganova_2x.png 2x">
-                                <img src="./img/Tatiana_Phleganova.png" alt="Татьяна Флеганова">
+                                <source class="swiper-slide__img" srcset="./img/retina/Tatiana_Phleganova_2x.png 2x">
+                                <img class="swiper-slide__img" src="./img/Tatiana_Phleganova.png" alt="Татьяна Флеганова">
                             </picture>
                             <h4 class="swiper-slide__header">
                                 Татьяна Флеганова
@@ -2077,8 +2087,8 @@
                         </div>
                         <div class="swiper-slide">
                             <picture class="swiper-slide__picture">
-                                <source srcset="./img/retina/Pheodor_Prokopiev_2x.png 2x">
-                                <img src="./img/Pheodor_Prokopiev.png" alt="Фёдор Прокопьев">
+                                <source class="swiper-slide__img" srcset="./img/retina/Pheodor_Prokopiev_2x.png 2x">
+                                <img class="swiper-slide__img" src="./img/Pheodor_Prokopiev.png" alt="Фёдор Прокопьев">
                             </picture>
                             <h4 class="swiper-slide__header">
                                 Фёдор Прокопьев
@@ -2089,8 +2099,8 @@
                         </div>
                         <div class="swiper-slide">
                             <picture class="swiper-slide__picture">
-                                <source srcset="./img/retina/Svetlana_Kortneva_2x.png 2x">
-                                <img src="./img/Svetlana_Kortneva.png" alt="Светлана Кортнева">
+                                <source class="swiper-slide__img" srcset="./img/retina/Svetlana_Kortneva_2x.png 2x">
+                                <img class="swiper-slide__img" src="./img/Svetlana_Kortneva.png" alt="Светлана Кортнева">
                             </picture>
                             <h4 class="swiper-slide__header">
                                 Светлана Кортнева
@@ -2131,7 +2141,7 @@
                     </div>
                 </form>
             </div>
-        </section> -->
+        </section>
         <div id="enter" class="popup">
             <div class="popup__container">
                 <div class="popup__content">
@@ -2202,7 +2212,7 @@
             </div>
         </div>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer__container">
             <div class="footer__socials">
                 <a class="footer__socials__logo-link" href="#">
@@ -2267,8 +2277,6 @@
                                 Гости
                             </a>
                         </li>
-                    </ul>
-                    <ul class="footer__nav__list">
                         <li class="footer__nav__list__item">
                             <a class="footer__nav__list__item__list" href="#playlists">
                                 Плейлисты
@@ -2284,8 +2292,6 @@
                                 О нас
                             </a>
                         </li>
-                    </ul>
-                    <ul class="footer__nav__list">
                         <li class="footer__nav__list__item">
                             <a class="footer__nav__list__item__list" href="#">
                                 Новости
@@ -2310,7 +2316,7 @@
                 W-WAVE ® 2021
             </div>
         </div>
-    </footer> -->
+    </footer>
 </body>
 
 </html>
