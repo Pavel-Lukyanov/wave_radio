@@ -3196,6 +3196,10 @@ div.onair:last-child {
 
 @media(max-width: 500px) {
 
+    .header__nav__list__item:nth-child(4) {
+        padding-top: 30px;
+    }
+
     .footer__socials__link svg {
         width: 36px;
         height: 36px;
