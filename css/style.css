@@ -2343,6 +2343,10 @@ div.onair:last-child {
     opacity: 0.6;
 }
 
+.swiper-wrapper {
+    height: auto;
+}
+
 .form textarea {
     font-family: 'Muller', sans-serif;
     font-style: normal;
@@ -3110,6 +3114,10 @@ div.onair:last-child {
         width: 100px;
         text-align: left;
     }
+
+    .playlists__form__list {
+        column-count: 1;
+    }
 }
 
 @media(max-width: 550px) {
@@ -3195,6 +3203,60 @@ div.onair:last-child {
 }
 
 @media(max-width: 500px) {
+
+    .playlists__genre__label {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .playlists__form__list {
+        display: flex;
+        overflow-x: auto;
+        gap: 15px;
+    }
+
+    .playlists__form {
+        width: 100%;
+        box-sizing: border-box;
+        display: inherit;
+    }
+
+    .playlists__genre__span {
+        width: 100% !important;
+        border-radius: 77px !important;
+        padding-top: 7.5px;
+        padding-bottom: 7.5px;
+        border: 2px solid #6D31EE !important;
+    }
+
+    .playlists__genre__label {
+        color: #6D31EE;
+    }
+
+    .playlists__form__list__item__input+.playlists__genre__span:before {
+        content: none;
+    }
+
+    .playlists__form__list__item__input+.playlists__genre__span::after {
+        width: 103%;
+        height: 101%;
+        border-radius: 77px;
+        left: -2px;
+    }
+
+    .playlists__form__list__item__input:checked~.playlists__genre__label {
+        color: #FFFFFF;
+    }
+
+    .playlists__form__list__item {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .playlists__genre__label {
+        padding-left: 19.5px;
+        padding-right: 19.5px;
+    }
 
     .header__nav__list__item:nth-child(4) {
         padding-top: 30px;
