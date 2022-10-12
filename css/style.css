@@ -3204,6 +3204,20 @@ div.onair:last-child {
 
 @media(max-width: 500px) {
 
+    .podcasts {
+        padding: 54px 0;
+    }
+    
+    .podcasts__cards {
+        margin-bottom: 30px;
+    }
+
+    .podcasts__more-btn {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 17px 30px;
+    }
+
     .playlists__container {
         padding-right: 0;
     }
@@ -3260,10 +3274,10 @@ div.onair:last-child {
     }
 
     .playlists__form__list__item__input+.playlists__genre__span::after {
-        width: 103%;
-        height: 101%;
+        width: 100%;
+        height: 100%;
         border-radius: 77px;
-        left: -2px;
+        left: 0px;
     }
 
     .playlists__form__list__item__input:checked~.playlists__genre__label {
