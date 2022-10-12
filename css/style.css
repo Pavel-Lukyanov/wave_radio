@@ -1934,7 +1934,7 @@ div.onair:last-child {
 .playlists__autros__btn-play {
     position: absolute;
     z-index: 1;
-    top: -60px;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
