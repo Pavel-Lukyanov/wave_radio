@@ -2908,7 +2908,7 @@ div.onair:last-child {
         margin-right: 0;
         padding-bottom: 172px;
     }
-    
+
     .about__background {
         background-image: url(../img/about-background3.svg);
         background-position: -126px 92%;
@@ -3204,33 +3204,55 @@ div.onair:last-child {
 
 @media(max-width: 500px) {
 
+    .playlists__container {
+        padding-right: 0;
+    }
+
+    .headers {
+        font-size: 24px;
+    }
+
+    .playlists__form__genre {
+        font-size: 12px;
+    }
+
+    .playlists__autors {
+        margin-right: 32px;
+    }
+
+    .playlists__warning {
+        padding-right: 32px;
+    }
+
     .playlists__genre__label {
         font-size: 16px;
         line-height: 16px;
+        color: #6D31EE;
+        padding-left: 19.5px;
+        padding-right: 19.5px;
     }
 
     .playlists__form__list {
         display: flex;
         overflow-x: auto;
         gap: 15px;
+        max-width: none;
+        margin-bottom: 0;
     }
 
     .playlists__form {
         width: 100%;
         box-sizing: border-box;
         display: inherit;
+        margin-bottom: 0;
     }
 
     .playlists__genre__span {
         width: 100% !important;
         border-radius: 77px !important;
-        padding-top: 7.5px;
-        padding-bottom: 7.5px;
+        padding-top: 6.5px;
+        padding-bottom: 6.5px;
         border: 2px solid #6D31EE !important;
-    }
-
-    .playlists__genre__label {
-        color: #6D31EE;
     }
 
     .playlists__form__list__item__input+.playlists__genre__span:before {
@@ -3251,11 +3273,6 @@ div.onair:last-child {
     .playlists__form__list__item {
         padding-top: 10px;
         padding-bottom: 10px;
-    }
-
-    .playlists__genre__label {
-        padding-left: 19.5px;
-        padding-right: 19.5px;
     }
 
     .header__nav__list__item:nth-child(4) {
