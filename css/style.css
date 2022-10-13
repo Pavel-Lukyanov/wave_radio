@@ -936,6 +936,10 @@ div.onair:last-child {
     grid-column-end: 1;
     grid-row-start: 2;
     grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .transmission__cards {
@@ -1105,13 +1109,6 @@ div.onair:last-child {
     font-size: 16px;
     line-height: 150%;
     color: #A1A6B4;
-}
-
-.transmission__archive {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
 }
 
 .archive-img {
@@ -1451,7 +1448,7 @@ div.onair:last-child {
 
 .guests__content {
     display: grid;
-    grid-template-columns: 2.5fr 1fr;
+    grid-template-columns: 2.1fr 1fr;
     gap: 30px;
 }
 
@@ -1767,7 +1764,7 @@ div.onair:last-child {
 }
 
 .playlists__form h2 {
-    margin-bottom: 11px;
+    margin-bottom: 13px;
 }
 
 .playlists__form__list__item {
@@ -2303,7 +2300,7 @@ div.onair:last-child {
 .swiper-button-next {
     width: 48px;
     height: 48px;
-    top: -283px;
+    top: -265px;
     right: 0;
     transition: 0.3s;
 }
@@ -2315,7 +2312,7 @@ div.onair:last-child {
 .swiper-button-prev {
     width: 48px;
     height: 48px;
-    top: -283px;
+    top: -265px;
     left: 0;
     transition: 0.3s;
 }
@@ -2483,7 +2480,7 @@ div.onair:last-child {
 .footer__socials {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 }
 
 .footer__socials__container {
@@ -2557,10 +2554,20 @@ div.onair:last-child {
 @media(max-width: 1230px) {
     .about__background {
         background-image: url(../img/about_background_2.svg);
+        background-position: 87% 50%;
     }
 }
 
 @media(max-width: 1160px) {
+
+    .transmission__autor {
+        margin-bottom: 225px;
+    }
+
+    .header__bottom {
+        gap: 36px;
+    }
+
     .playlists__autors {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -2572,7 +2579,7 @@ div.onair:last-child {
     .header__mobile {
         display: block;
         background-color: #E6E8EC;
-        padding: 23px 100px 23px 100px;
+        padding: 33px 100px 19px 100px;
     }
 
     .header__top {
@@ -2594,6 +2601,9 @@ div.onair:last-child {
 
     .transmission__cards {
         grid-template-columns: repeat(2, 1fr);
+        padding-top: 11px;
+        grid-row-start: 1;
+        grid-row-end: 5;
     }
 
     .guests__accordeon__content {
@@ -2607,6 +2617,26 @@ div.onair:last-child {
 
 @media(max-width: 1024px) {
 
+    .form {
+        padding-right: 0;
+    }
+
+    .market {
+        padding-bottom: 94px;
+    }
+
+    .market__container__img {
+        height: 93%;
+    }
+
+    .playlists__form__genre {
+        margin-bottom: 10px;
+    }
+
+    .header__logo__img {
+        width: 112px;
+    }
+
     .swiper-button-next {
         right: 34px;
     }
@@ -2616,23 +2646,25 @@ div.onair:last-child {
     }
 
     .onair {
-        padding: 0px 11px 0px 11px;
+        padding: 0px 19px 0px 13px;
     }
 
     .main-banner {
         background-size: 256px 262px;
+        padding-bottom: 91px;
     }
 
     .main-banner__paragraph {
         max-width: 539px;
+        margin-bottom: 18px;
     }
 
     .transmission__cards__item {
-        max-width: 250px;
+        max-width: 253px;
     }
 
     .transmission__container {
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 0.94fr 2fr;
     }
 
     .guests__description {
@@ -2640,7 +2672,7 @@ div.onair:last-child {
     }
 
     .guests__content {
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 2.1fr 1fr;
     }
 
     .guests__accordeon__content {
@@ -2669,19 +2701,18 @@ div.onair:last-child {
     .playlists__form__list {
         border-bottom: none;
         column-count: 2;
-        max-width: 350px;
-        margin-bottom: 15px;
+        max-width: 320px;
     }
 
     .playlists__form__list__item {
         height: 31px;
-        margin-bottom: 16px !important;
+        margin-bottom: 15px !important;
     }
 
     .playlists__autors__item {
         display: grid;
         grid-template-columns: 0.81fr 1fr;
-        max-width: 250px;
+        max-width: 254px;
     }
 
     .playlists__card__text {
@@ -2690,7 +2721,7 @@ div.onair:last-child {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 10px;
+        padding: 7px;
     }
 
     .rus::before {
@@ -2717,7 +2748,7 @@ div.onair:last-child {
     }
 
     .podcasts__cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .podcasts__img {
@@ -2726,6 +2757,12 @@ div.onair:last-child {
 
     .podcasts__item {
         grid-template-columns: 0fr 1fr;
+    }
+}
+
+@media(max-width: 1000px) {
+    .podcasts__cards {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -2889,6 +2926,7 @@ div.onair:last-child {
         max-width: 100%;
         margin-bottom: 30px;
         justify-content: center;
+        padding-top: 30px;
     }
 
     .transmission__link {
@@ -2906,18 +2944,18 @@ div.onair:last-child {
     .about__content__paragraph {
         max-width: none;
         margin-right: 0;
-        padding-bottom: 172px;
+        padding-bottom: 138px;
     }
 
     .about__background {
         background-image: url(../img/about-background3.svg);
-        background-position: -126px 92%;
+        background-position: -128px 100%;
     }
 
     .footer__container {
         flex-direction: column;
         align-items: center;
-        gap: 80px;
+        gap: 72px;
     }
 
     .footer__socials__container {
@@ -2931,6 +2969,90 @@ div.onair:last-child {
 
 
 @media(max-width: 768px) {
+
+    .footer__socials__link svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .form-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .market__container  {
+        gap: 52px;
+    }
+
+    .market {
+        padding-top: 50px;
+    }
+
+    .playlists__form__list  {
+        margin-bottom: 6px;
+    }
+
+    .playlists__form__list__item {
+        margin-bottom: 29px !important;
+    }
+
+    .guests {
+        padding-bottom: 103px;
+    }
+
+    .guests__detail__description {
+        max-width: 410px;
+    }
+
+    .guests__accordeon__item .guests__accordeon__content {
+        row-gap: 30px;
+    }
+
+    .transmission__mobile {
+        column-gap: 11px;
+    }
+
+    .archive-img {
+        width: 82px;
+        height: 96px;
+        background-position: 2px 0px;
+        background-size: 70px;
+    }
+
+    .transmission__link  {
+        padding: 10px 54px;
+    }
+
+    .header__top__burger-btn {
+        padding: 0;
+    }
+
+    .transmission__autor  {
+        margin-bottom: 34px;
+    }
+
+    .transmission__container  {
+        padding-bottom: 58px;
+    }
+
+    .header__bottom  {
+        gap: 18px;
+    }
+
+    .header__mobile {
+        padding: 33px 114px 19px 114px;
+    }
+
+    .container {
+        padding-left: 114px;
+        padding-right: 114px;
+    }
+
+    .center {
+        padding-left: 114px;
+        padding-right: 114px;
+    }
+
     .popup__container {
         max-width: 540px;
     }
@@ -3204,10 +3326,19 @@ div.onair:last-child {
 
 @media(max-width: 500px) {
 
+    .search-form__btn {
+        padding: 0;
+    }
+
+    .header__top {
+        padding-top: 10px;
+        margin-bottom: 8px;
+    }
+
     .podcasts {
         padding: 54px 0;
     }
-    
+
     .podcasts__cards {
         margin-bottom: 30px;
     }
@@ -3293,11 +3424,6 @@ div.onair:last-child {
         padding-top: 30px;
     }
 
-    .footer__socials__link svg {
-        width: 36px;
-        height: 36px;
-    }
-
     .swiper-slide__img {
         max-width: 113px;
     }
@@ -3320,9 +3446,6 @@ div.onair:last-child {
 
     .about__content__paragraph {
         padding-bottom: 0;
-    }
-
-    .about__content__paragraph {
         font-size: 14px;
         line-height: 22px;
         margin-bottom: 30px;
@@ -3339,11 +3462,6 @@ div.onair:last-child {
         padding-right: 0;
     }
 
-    .form-container {
-        flex-direction: column;
-        gap: 30px;
-    }
-
     .form__warning {
         top: 4px;
     }
@@ -3356,16 +3474,16 @@ div.onair:last-child {
     }
 
     .header__logo__img {
-        width: 70px;
-        height: 10px;
+        width: 88px;
+        height: 12px;
     }
 
     .btn-enter {
-        padding: 7px 21px;
+        padding: 7px 22px;
     }
 
     .header__mobile {
-        padding: 9px 32px;
+        padding: 10px 32px;
     }
 
     .header__mobile__menu {
@@ -3522,6 +3640,7 @@ div.onair:last-child {
         background-size: 77px 105px;
         width: 77px;
         height: 105px;
+        flex-shrink: 0;
     }
 
     .transmission__content {
@@ -3532,19 +3651,12 @@ div.onair:last-child {
     .transmission__mobile {
         padding-right: 32px;
         padding-left: 32px;
+        gap: 13px;
     }
 
     .transmission__link {
         margin-bottom: 0;
         padding: 9px 31px;
-    }
-
-    .transmission__mobile {
-        gap: 13px;
-    }
-
-    .archive-img {
-        flex-shrink: 0;
     }
 
     .transmission__container {
