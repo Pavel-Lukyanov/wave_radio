@@ -257,7 +257,7 @@ a {
 .search-form {
     position: relative;
     display: flex;
-    margin-bottom: 4px;
+    /* margin-bottom: 4px; */
 }
 
 .header__mobile__menu {
@@ -845,7 +845,6 @@ div.onair:last-child {
     font-size: 20px;
     line-height: 20px;
     color: #121723;
-    margin-bottom: 2px;
 }
 
 .podcasts__name__full {
@@ -2030,7 +2029,7 @@ div.onair:last-child {
     background-image: url(../img/);
 }
 
-.playlists__autors__item h3 {
+.playlists__card__text__header {
     font-family: 'Muller', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -2122,7 +2121,7 @@ div.onair:last-child {
     position: relative;
 }
 
-.market__text::before {
+.market__text__header::before {
     position: absolute;
     content: '';
     top: 115px;
@@ -2566,6 +2565,7 @@ div.onair:last-child {
 
     .header__bottom {
         gap: 36px;
+        grid-template-columns: 2fr 0.5fr;
     }
 
     .playlists__autors {
@@ -2593,10 +2593,6 @@ div.onair:last-child {
 
     .age-limit {
         display: none;
-    }
-
-    .header__bottom {
-        grid-template-columns: 2fr 0.5fr;
     }
 
     .transmission__cards {
@@ -2803,6 +2799,10 @@ div.onair:last-child {
         height: 220px;
         object-fit: cover;
     }
+
+    .market__text__header::before {
+        top: 60px;
+    }
 }
 
 @media(max-width: 890px) {
@@ -2967,6 +2967,11 @@ div.onair:last-child {
     }
 }
 
+@media(max-width: 854px) {
+    .market__text__header::before {
+        top: 110px;
+    }
+}
 
 @media(max-width: 768px) {
 
@@ -2980,7 +2985,7 @@ div.onair:last-child {
         gap: 30px;
     }
 
-    .market__container  {
+    .market__container {
         gap: 52px;
     }
 
@@ -2988,7 +2993,7 @@ div.onair:last-child {
         padding-top: 50px;
     }
 
-    .playlists__form__list  {
+    .playlists__form__list {
         margin-bottom: 6px;
     }
 
@@ -3019,7 +3024,7 @@ div.onair:last-child {
         background-size: 70px;
     }
 
-    .transmission__link  {
+    .transmission__link {
         padding: 10px 54px;
     }
 
@@ -3027,15 +3032,15 @@ div.onair:last-child {
         padding: 0;
     }
 
-    .transmission__autor  {
+    .transmission__autor {
         margin-bottom: 34px;
     }
 
-    .transmission__container  {
+    .transmission__container {
         padding-bottom: 58px;
     }
 
-    .header__bottom  {
+    .header__bottom {
         gap: 18px;
     }
 
@@ -3066,9 +3071,17 @@ div.onair:last-child {
     .footer__nav__list {
         gap: 100px;
     }
+
+    .guests__accordeon__content {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media(max-width: 700px) {
+
+    .guests__accordeon__content {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     .center {
         padding-left: 32px;
@@ -3243,6 +3256,7 @@ div.onair:last-child {
 }
 
 @media(max-width: 550px) {
+
     .playlists__autors__item {
         flex-direction: column;
     }
@@ -3258,7 +3272,13 @@ div.onair:last-child {
     }
 
     .rus::before {
-        right: 0;
+        right: 0px;
+        left: auto;
+    }
+
+    .british::before {
+        right: 0px;
+        left: auto;
     }
 
     .footer__nav__list {
@@ -3271,11 +3291,6 @@ div.onair:last-child {
         background-color: #121723;
     }
 
-    .footer__nav {
-        padding: 30px 32px;
-        box-sizing: border-box;
-    }
-
     .footer__container {
         padding-left: 0;
         padding-right: 0;
@@ -3284,9 +3299,27 @@ div.onair:last-child {
     .footer__nav__container {
         margin-bottom: 10px;
     }
+
+    .playlists__autors__item {
+        width: fit-content;
+    }
+
+    .footer__nav {
+        padding: 25px 32px;
+        box-sizing: border-box;
+    }
 }
 
 @media(max-width: 530px) {
+
+    .footer__nav__list__item {
+        margin-bottom: 17px;
+    }
+
+    .footer__copyright {
+        font-size: 12px;
+    }
+
     .main-banner__paragraph {
         font-size: 14px;
         line-height: 21px;
@@ -3306,25 +3339,189 @@ div.onair:last-child {
 
     .main-banner {
         padding-top: 40px;
-    }
-
-    .guests__accordeon__btn {
-        font-size: 16px;
-        line-height: 16px;
-        padding: 11px 0px;
+        padding-bottom: 40px;
     }
 
     .guests__accordeon__tab {
         font-size: 14px;
         line-height: 15px;
     }
-
-    .guests__accordeon__head__rectangle svg {
-        width: 30px;
-    }
 }
 
 @media(max-width: 500px) {
+
+    .market__text__header::before {
+        top: 40px;
+    }
+
+    .footer {
+        padding-top: 56px;
+    }
+
+    .footer__nav__list__item__list {
+        font-size: 12px;
+    }
+
+    .footer__nav__list {
+        gap: 30px;
+    }
+
+    .footer__socials {
+        gap: 15px;
+    }
+
+    .footer__container {
+        gap: 50px;
+    }
+
+    .form__agree__label {
+        font-size: 9px;
+    }
+
+    .form {
+        gap: 28px;
+    }
+
+    .about__content__paragraph__mini-head {
+        margin-bottom: 3px;
+    }
+
+    .about {
+        padding-top: 56px;
+        padding-bottom: 50px;
+    }
+
+    .market__container {
+        gap: 34px;
+    }
+
+    .playlists__warning__paragraph {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
+    .playlists {
+        padding-top: 55px;
+        padding-bottom: 56px;
+    }
+
+    .playlists__form h2 {
+        margin-bottom: 16px;
+    }
+
+    .guests__detail__ephir {
+        padding: 7px 13.5px;
+    }
+
+    .guests__detail__picture {
+        margin-bottom: 9px;
+    }
+
+    .guests__detail__socials {
+        gap: 21px;
+    }
+
+    .guests__content {
+        gap: 30px;
+    }
+
+    .guests__detail__socials__link svg {
+        width: 36px;
+        height: 36px;
+    }
+
+    .guests__detail__img {
+        height: 158px;
+    }
+
+    .guests__accordeon__head__rectangle svg {
+        width: 26px;
+    }
+
+    .guests__accordeon__btn {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 5px 0px;
+    }
+
+    .guests__accordeon__item.active .guests__accordeon__content {
+        padding: 20px 0 20px 0;
+    }
+
+    .guests__color {
+        margin-bottom: 11px;
+    }
+
+    .guests__description b {
+        margin-bottom: 0;
+    }
+
+    .guests__description {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 29px;
+    }
+
+    .guests {
+        padding-top: 55px;
+        padding-bottom: 62px;
+    }
+
+    .transmission__autor h2 {
+        margin-bottom: 18px;
+    }
+
+    .transmission__autor {
+        margin-bottom: 18px;
+    }
+
+    .transmission__autor__text {
+        font-size: 12px;
+        line-height: 12px;
+        margin-bottom: 6px;
+    }
+
+    .podcasts__content hr {
+        margin-bottom: 0;
+    }
+
+    .podcasts__name button svg {
+        width: 36px;
+        height: 36px;
+        left: -8px;
+        top: -15px;
+    }
+
+    .podcasts__name button svg path {
+        fill: #6D31EE;
+    }
+
+    .podcasts__name button svg circle {
+        stroke: #6D31EE;
+    }
+
+    .podcasts__name button svg rect {
+        fill: #6D31EE;
+    }
+
+    .podcasts__name__full {
+        font-size: 12px;
+        line-height: 12px;
+    }
+
+    .podcasts__name__content {
+        margin-bottom: 14px;
+    }
+
+    .podcasts__name__content__header {
+        font-size: 16px;
+        line-height: 16px;
+    }
+
+    .header__bottom {
+        height: 43px;
+    }
 
     .search-form__btn {
         padding: 0;
@@ -3355,14 +3552,19 @@ div.onair:last-child {
 
     .headers {
         font-size: 24px;
+        margin-bottom: 20px;
     }
 
     .playlists__form__genre {
         font-size: 12px;
+        margin-bottom: 0;
     }
 
     .playlists__autors {
         margin-right: 32px;
+        padding-top: 22px;
+        padding-bottom: 33px;
+        margin-bottom: 27px;
     }
 
     .playlists__warning {
@@ -3404,6 +3606,10 @@ div.onair:last-child {
         content: none;
     }
 
+    .playlists__form__list__item__input+.playlists__genre__span {
+        height: 18px;
+    }
+
     .playlists__form__list__item__input+.playlists__genre__span::after {
         width: 100%;
         height: 100%;
@@ -3416,8 +3622,9 @@ div.onair:last-child {
     }
 
     .playlists__form__list__item {
-        padding-top: 10px;
+        padding-top: 6px;
         padding-bottom: 10px;
+        margin-bottom: 0 !important;
     }
 
     .header__nav__list__item:nth-child(4) {
@@ -3432,6 +3639,8 @@ div.onair:last-child {
         font-size: 14px;
         line-height: 18px;
         max-width: 113px;
+        margin-top: 8px;
+        margin-bottom: 6px;
     }
 
     .swiper-slide__paragraph {
@@ -3453,13 +3662,15 @@ div.onair:last-child {
 
     .form textarea {
         font-size: 16px;
-        padding-top: 17px;
+        padding-top: 15px;
         padding-right: 24px;
         padding-left: 24px;
+        border-radius: 20px;
     }
 
     .center {
         padding-right: 0;
+        margin-bottom: 28px;
     }
 
     .form__warning {
@@ -3470,7 +3681,7 @@ div.onair:last-child {
         font-weight: 400;
         font-size: 24px;
         line-height: 24px;
-        margin-bottom: 12px;
+        margin-bottom: 11px;
     }
 
     .header__logo__img {
@@ -3524,11 +3735,11 @@ div.onair:last-child {
 
     .form input {
         font-size: 16px;
-        padding: 12px 32px;
+        padding: 14px 23px;
     }
 
     .form button {
-        padding: 12px 54px;
+        padding: 15px 45px;
         font-size: 16px;
     }
 
@@ -3554,10 +3765,12 @@ div.onair:last-child {
     .podcasts__img__picture__img {
         width: 100%;
         object-fit: cover;
+        height: 72px;
     }
 
     .podcasts__img {
         width: 100%;
+        height: 72px;
     }
 
     .podcasts__name {
@@ -3568,22 +3781,25 @@ div.onair:last-child {
         font-size: 12px;
         line-height: 12px;
         font-weight: 400;
-        margin-bottom: 6px;
+        margin-bottom: 8px;
     }
 
     .podcasts__statistics {
         justify-content: center;
-        padding-top: 6px;
-        padding-bottom: 6px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 0;
     }
 
     .podcasts__statistics button {
         padding: 6px;
+        font-size: 12px;
+        line-height: 12px;
     }
 
     .transmission__cards__text {
         padding: 10px;
-        height: 100%;
+        height: 77px;
     }
 
     .transmission__cards__header {
@@ -3595,13 +3811,15 @@ div.onair:last-child {
     .transmission__cards__paragraph {
         font-size: 9px;
         line-height: 9px;
-        margin-bottom: 42px;
+        margin-bottom: 30px;
         position: relative;
     }
 
     .transmission__cards__more {
         font-size: 12px;
         color: #6D31EE;
+        position: absolute;
+        bottom: 8px;
     }
 
     .transmission__cards__more svg path {
@@ -3623,11 +3841,6 @@ div.onair:last-child {
     .transmission__cards__item__link {
         height: 100%;
         justify-content: space-between;
-    }
-
-    .transmission__cards__more {
-        position: absolute;
-        bottom: 12px;
     }
 
     .transmission__text {
@@ -3652,6 +3865,7 @@ div.onair:last-child {
         padding-right: 32px;
         padding-left: 32px;
         gap: 13px;
+        margin-bottom: 26px;
     }
 
     .transmission__link {
@@ -3660,6 +3874,7 @@ div.onair:last-child {
     }
 
     .transmission__container {
+        padding-top: 55px;
         padding-bottom: 30px;
     }
 
@@ -3674,8 +3889,8 @@ div.onair:last-child {
         margin-bottom: 41px;
     }
 
-    .market__text::before {
-        top: 63px;
+    .market__text__link {
+        padding: 12px 11.5px;
     }
 
     .market__text__paragraph {
@@ -3722,8 +3937,18 @@ div.onair:last-child {
         margin-bottom: 5px;
     }
 
+    .playlists__card__text {
+        padding: 9px;
+    }
+
     .playlists__card__text__paragraph {
         font-size: 9px;
         line-height: 9px;
+    }
+}
+
+@media(max-width: 391px) {
+    .market__text__header::before {
+        top: 60px;
     }
 }
